@@ -1,4 +1,4 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
 
 settings:
   autoInstallPeers: true
@@ -132,6 +132,7 @@ packages:
     resolution: {integrity: sha512-BsCMgWoppKTnvVQCr4IX7X4FjkTUUXgb7Jc9vdeSAOyO6nK87Rt9w3WOYVBZXnaZ+5i1uqqaROn7uKtrF/51mg==}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: true
     optional: true
@@ -140,6 +141,7 @@ packages:
     resolution: {integrity: sha512-LXecU6xAvDp+w2Oyw/9+fkHnYtKJs+PFdh8/uf1axU/S/3SIKYxrNsMgpO8nRtRwzXQOoFWOu+UYvhB+p0leYA==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: true
     optional: true
@@ -148,6 +150,7 @@ packages:
     resolution: {integrity: sha512-mBXTLZ7Z0NUcAEYCU1GyaoXv8+u5O9wW1gVCq7DdaLkksOiGGJcc1YMVgT1mE2Zp/o6MPyW1BgSKbmTRikOkRQ==}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: true
     optional: true
@@ -5354,6 +5357,7 @@ packages:
     engines: {node: '>=0.8.2'}
     hasBin: true
     dev: false
+    bundledDependencies: []
 
   /titleize@3.0.0:
     resolution: {integrity: sha512-KxVu8EYHDPBdUYdKZdKtU2aj2XfEx9AfjXxE/Aj0vT06w2icA09Vus1rh6eSu1y01akYg6BjIK/hxyLJINoMLQ==}
