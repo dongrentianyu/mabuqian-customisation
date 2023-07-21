@@ -1,0 +1,32 @@
+code-body: yes
+caption: 简单闪卡
+created: 20230719113851469
+creator: 马不前
+modified: 20230721065634419
+modifier: 马不前
+tags: $:/tags/Macro
+title: $:/plugins/mabuqian/gumo-customisation/hover-effect-macro
+
+\whitespace trim
+\define fc(text)
+<$reveal state="$:/config/self-configs/hover-effect-macro" type="match" text="show">
+<style>
+.hover-effect 
+{
+color: black; /* 设置文本默认颜色为黑色 flash card */
+background-color: black; /* 设置默认背景颜色为白色 */
+padding: 5px 10px;
+transition: background-color 0.3s; /* 添加过渡效果，使颜色改变平滑 */
+border-radius: 3px; /* 添加圆角效果 */
+}
+.hover-effect:hover 
+{
+color: white; /* 鼠标移动上去时，将文本颜色改为白色 */
+background-color: black; /* 鼠标移动上去时，将背景颜色改为黑色 */
+}
+</style>
+<span class="hover-effect">$text$</span>
+</$reveal>
+\end
+
+this is a <<fc "test" >>.

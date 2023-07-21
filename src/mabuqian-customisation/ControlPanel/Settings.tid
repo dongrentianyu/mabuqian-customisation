@@ -1,0 +1,22 @@
+title: $:/plugins/mabuqian/gumo-customisation/ControlPanel/Settings
+caption: MBQ
+tags: $:/tags/ControlPanel/SettingsTab custom-for-mabuqian
+
+\define MBQ-checkbox(name)
+<$checkbox tiddler={{{ [<name>] +[removeprefix[]] }}} field="text" checked="show" unchecked="hide" default="hide"><$link to="$name$" >{{$name$!!caption}}</$link></$checkbox>
+\end
+
+通过勾选来选择或取消相应条目
+
+
+!! Macro
+
+<<MBQ-checkbox "$:/plugins/mabuqian/gumo-customisation/hover-effect-macro" "$:/tags/Macro" >>
+
+!! Stylesheet
+
+ <<MBQ-checkbox "$:/plugins/mabuqian/gumo-customisation/edit-font-size" "$:/tags/Stylesheet" >>
+
+ <<MBQ-checkbox "$:/plugins/mabuqian/gumo-customisation/headers-separate-from-buttons" "$:/tags/Stylesheet" >>
+
+ <<MBQ-checkbox "$:/plugins/mabuqian/gumo-customisation/multi-column-dropdown-fixed" "$:/tags/Stylesheet" >>

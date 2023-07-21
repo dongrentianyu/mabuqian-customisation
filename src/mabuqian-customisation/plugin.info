@@ -1,9 +1,9 @@
 {
-  "title": "$:/plugins/mabuqian/mabuqian-customisation",
-  "name": "mabuqian-customisation",
+  "title": "$:/plugins/mabuqian/gumo-customisation",
+  "name": "gumo-customisation",
   "author": "mabuqian",
-  "description": "",
+  "description": "个人化定制插件",
   "plugin-type": "plugin",
   "version": "0.0.1",
-  "list": "readme"
+  "list": "readme ControlPanel/Settings"
 }
