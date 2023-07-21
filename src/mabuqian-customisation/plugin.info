@@ -1,0 +1,9 @@
+{
+  "title": "$:/plugins/mabuqian/mabuqian-customisation",
+  "name": "mabuqian-customisation",
+  "author": "mabuqian",
+  "description": "",
+  "plugin-type": "plugin",
+  "version": "0.0.1",
+  "list": "readme"
+}
