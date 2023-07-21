@@ -1,6 +1,6 @@
 {
   "title": "$:/plugins/mabuqian/gumo-customisation",
-  "name": "gumo-customisation",
+  "name": "GuMo-Customisation",
   "author": "mabuqian",
   "description": "个人化定制插件",
   "plugin-type": "plugin",

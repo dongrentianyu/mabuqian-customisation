@@ -4,7 +4,7 @@ creator: 马不前
 description: 显示搜索框和页面按钮
 modified: 20230714165630866
 modifier: 马不前
-tags: $:/tags/ViewToolbar 自定制的按钮类 四个按钮
+tags: $:/tags/ViewToolbar
 title: $:/plugins/mabuqian/gumo-customisation/fours-search
 
 \whitespace trim

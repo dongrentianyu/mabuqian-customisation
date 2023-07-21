@@ -18,6 +18,10 @@ config
 
 通过勾选来选择或取消相应条目
 
+!! Buttons
+
+<<list-links "[all[tiddlers]prefix[$:/plugins/mabuqian/gumo-customisation/fours-]tag[$:/tags/ViewToolbar]sort[title]]">>
+
 
 !! Macro
 
