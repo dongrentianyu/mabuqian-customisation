@@ -1,16 +1,18 @@
 code-body: yes
-caption: 修改编辑字体大小
+caption: 修改编辑字体大小-CodeMirror版本
 created: 20230705065620473
 creator: 马不前
 modified: 20230718155540842
 modifier: 马不前
 tags: $:/tags/Stylesheet
-title: $:/plugins/mabuqian/gumo-customisation/edit-font-size
+title: $:/plugins/mabuqian/gumo-customisation/edit-font-size-CodeMirror
 type: text/vnd.tiddlywiki
 
+<$reveal state="$:/config/gumo-customisation/edit-font-size-CodeMirror" type="match" text="show">
 .CodeMirror {
     height: auto;
     font-family: ;
     font-size: 25px;
     line-height: 30px;
 }
+</$reveal>

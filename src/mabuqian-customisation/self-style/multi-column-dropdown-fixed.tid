@@ -8,6 +8,7 @@ tags: $:/tags/Stylesheet
 title: $:/plugins/mabuqian/gumo-customisation/multi-column-dropdown-fixed
 type: text/vnd.tiddlywiki
 
+<$reveal state="$:/config/gumo-customisation/multi-column-dropdown-fixed" type="match" text="show">
 \define sidebarbreakpoint()
 <$text text={{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}/>
 \end
@@ -58,3 +59,4 @@ type: text/vnd.tiddlywiki
 
 }
 </pre>
+</$reveal>

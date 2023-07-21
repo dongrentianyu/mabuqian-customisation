@@ -1,0 +1,20 @@
+created: 20230713032052904
+creator: 马不前
+modified: 20230714165630865
+modifier: 马不前
+tags: 
+title: $:/plugins/mabuqian/gumo-customisation/fours-search-param
+
+<$button message="tm-home" tooltip={{$:/language/Buttons/Home/Hint}} aria-label={{$:/language/Buttons/Home/Caption}} class=<<tv-config-toolbar-class>>>
+{{$:/core/images/home-button}}
+</$button>
+<$button to="$:/AdvancedSearch" tooltip={{$:/language/Buttons/AdvancedSearch/Hint}} aria-label={{$:/language/Buttons/AdvancedSearch/Caption}}
+class=<<tv-config-toolbar-class>> >
+{{$:/core/images/advanced-search-button}}
+</$button>
+<$button to="$:/ControlPanel" tooltip={{$:/language/Buttons/ControlPanel/Hint}} aria-label={{$:/language/Buttons/ControlPanel/Caption}}
+class=<<tv-config-toolbar-class>> >
+{{$:/core/images/options-button}}
+</$button>
+
+{{$:/AdvancedSearch}}

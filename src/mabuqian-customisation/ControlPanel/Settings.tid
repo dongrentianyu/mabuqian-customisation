@@ -1,22 +1,40 @@
 title: $:/plugins/mabuqian/gumo-customisation/ControlPanel/Settings
 caption: MBQ
-tags: $:/tags/ControlPanel/SettingsTab custom-for-mabuqian
+tags: $:/tags/ControlPanel/SettingsTab
 
-\define MBQ-checkbox(name)
-<$checkbox tiddler={{{ [<name>] +[removeprefix[]] }}} field="text" checked="show" unchecked="hide" default="hide"><$link to="$name$" >{{$name$!!caption}}</$link></$checkbox>
+\whitespace trim
+\define MBQ-checkbox(configname,realname)
+<$checkbox tiddler="$configname$" field="text" checked="show" unchecked="hide" >
+<$link to="$configname$" >
+config
+</$link>&nbsp;⇨&nbsp;
+<$link to="$realname$" >
+{{$realname$!!caption}}
+</$link>
+</$checkbox>
 \end
+
+
 
 通过勾选来选择或取消相应条目
 
 
 !! Macro
 
-<<MBQ-checkbox "$:/plugins/mabuqian/gumo-customisation/hover-effect-macro" "$:/tags/Macro" >>
+<<MBQ-checkbox 
+"$:/config/gumo-customisation/hover-effect-macro" 
+"$:/plugins/mabuqian/gumo-customisation/hover-effect-macro" >>
 
 !! Stylesheet
 
- <<MBQ-checkbox "$:/plugins/mabuqian/gumo-customisation/edit-font-size" "$:/tags/Stylesheet" >>
+ <<MBQ-checkbox 
+ "$:/config/gumo-customisation/edit-font-size-CodeMirror"
+ "$:/plugins/mabuqian/gumo-customisation/edit-font-size-CodeMirror"  >>
 
- <<MBQ-checkbox "$:/plugins/mabuqian/gumo-customisation/headers-separate-from-buttons" "$:/tags/Stylesheet" >>
+ <<MBQ-checkbox 
+ "$:/config/gumo-customisation/headers-separate-from-buttons"
+ "$:/plugins/mabuqian/gumo-customisation/headers-separate-from-buttons" >>
 
- <<MBQ-checkbox "$:/plugins/mabuqian/gumo-customisation/multi-column-dropdown-fixed" "$:/tags/Stylesheet" >>
+ <<MBQ-checkbox 
+ "$:/config/gumo-customisation/multi-column-dropdown-fixed"
+ "$:/plugins/mabuqian/gumo-customisation/multi-column-dropdown-fixed"  >>

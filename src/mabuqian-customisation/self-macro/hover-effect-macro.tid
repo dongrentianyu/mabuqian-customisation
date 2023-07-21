@@ -9,7 +9,7 @@ title: $:/plugins/mabuqian/gumo-customisation/hover-effect-macro
 
 \whitespace trim
 \define fc(text)
-<$reveal state="$:/config/self-configs/hover-effect-macro" type="match" text="show">
+<$reveal state="$:/config/gumo-customisation/hover-effect-macro" type="match" text="show">
 <style>
 .hover-effect 
 {
