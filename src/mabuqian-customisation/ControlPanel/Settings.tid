@@ -20,7 +20,10 @@ config
 
 !! Buttons
 
-<<list-links "[all[tiddlers]prefix[$:/plugins/mabuqian/gumo-customisation/fours-]tag[$:/tags/ViewToolbar]sort[title]]">>
+* [[$:/plugins/mabuqian/gumo-customisation/fours/open]]
+* [[$:/plugins/mabuqian/gumo-customisation/fours/recent]]
+* [[$:/plugins/mabuqian/gumo-customisation/fours/search]]
+* [[$:/plugins/mabuqian/gumo-customisation/fours/thebrain]]
 
 
 !! Macro
