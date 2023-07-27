@@ -42,8 +42,10 @@ config
 * <<MBQ-checkbox "headers-separate-from-buttons" >>
 * <<MBQ-checkbox "multi-column-dropdown-fixed" >>
 * <<MBQ-checkbox "consistent-width-in-zoomin-view" >>
+* <<MBQ-checkbox "widening-the-story-river-notebook" >>
 
 !! Function
 
 * <<MBQ-link "latest-news" >>
 * <<MBQ-link "tag-cloud-display" >>
+* <<MBQ-checkbox "node-pill-top" >>

@@ -5,25 +5,23 @@ modifier: 马不前
 tags: $:/tags/Stylesheet
 title: $:/plugins/mabuqian/gumo-customisation/message-ai-user-css
 
-#chat-container {
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-        .user-message {
+       .user-message {
             display: flex;
             justify-content: flex-end;
             margin-bottom: 10px;
             align-items: flex-start;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: stretch;
         }
         .ai-message {
             display: flex;
             justify-content: flex-start;
             margin-bottom: 10px;
-            align-items: flex-start;
+            align-items: flex-end;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: stretch;
         }
         .message-box {
             padding: 5px;
@@ -43,4 +41,15 @@ title: $:/plugins/mabuqian/gumo-customisation/message-ai-user-css
             color: #e6f7ff;
             border-radius: 5px;
             background-color: hsl(351, 100%, 89%);
+        }
+        .message-button {
+            background-color: white;
+            color: white;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            top: 0;
+            left: 0;
         }
