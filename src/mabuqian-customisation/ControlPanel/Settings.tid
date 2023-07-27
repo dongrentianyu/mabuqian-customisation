@@ -32,14 +32,18 @@ config
 
 !! Macro
 
-<<MBQ-checkbox "hover-effect-macro"  >>
+* <<MBQ-checkbox "hover-effect-macro"  >>
+* <<MBQ-link "message-ai-user" >>
+* <<MBQ-link "message" >>
 
 !! Stylesheet
 
- <<MBQ-checkbox "edit-font-size-CodeMirror" >>
+* <<MBQ-checkbox "edit-font-size-CodeMirror" >>
+* <<MBQ-checkbox "headers-separate-from-buttons" >>
+* <<MBQ-checkbox "multi-column-dropdown-fixed" >>
+* <<MBQ-checkbox "consistent-width-in-zoomin-view" >>
 
- <<MBQ-checkbox "headers-separate-from-buttons" >>
+!! Function
 
- <<MBQ-checkbox "multi-column-dropdown-fixed" >>
-
- <<MBQ-checkbox "consistent-width-in-zoomin-view" >>
+* <<MBQ-link "latest-news" >>
+* <<MBQ-link "tag-cloud-display" >>
