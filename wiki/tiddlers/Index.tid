@@ -6,3 +6,9 @@ type: text/vnd.tiddlywiki
 Some readme here.
 
 this is a <<fc "test" >>.
+
+<<message "AI" "hi,the world" >>
+
+<<message-ai "Hello! How can I assist you today? " >>
+
+<<message-user "no,thanks." >>

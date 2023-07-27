@@ -1,0 +1,46 @@
+created: 20230727030557272
+creator: 马不前
+modified: 20230727045604453
+modifier: 马不前
+tags: $:/tags/Stylesheet
+title: $:/plugins/mabuqian/gumo-customisation/message-ai-user-css
+
+#chat-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .user-message {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 10px;
+            align-items: flex-start;
+        }
+        .ai-message {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 10px;
+            align-items: flex-start;
+        }
+        .message-box {
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .user-message .message-box {
+            background-color: #1E90FF;
+            color: #fff;
+        }
+        .ai-message .message-box {
+            background-color: #FF4500;
+            color: #fff;
+        }
+        .message-name {
+            padding: 5px;
+            color: #e6f7ff;
+            border-radius: 5px;
+            background-color: hsl(351, 100%, 89%);
+        }

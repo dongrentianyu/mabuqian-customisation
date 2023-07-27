@@ -9,3 +9,5 @@ type: text/vnd.tiddlywiki
 [[$:/plugins/mabuqian/gumo-customisation/fours]]
 
 {{$:/plugins/mabuqian/gumo-customisation/fours}}
+
+简单做了一个message宏，用来展示群聊消息，或者对话消息。当然最初是因为做成ai与用户对话的形式。因为ai发展迅速，有些内容确实很有价值和意义值得保存下来。但展示的空间很大，有些浪费掉了。但也能接受。
