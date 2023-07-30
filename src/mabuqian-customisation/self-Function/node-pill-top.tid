@@ -11,6 +11,6 @@ type: text/vnd.tiddlywiki
 
 <$reveal state="$:/config/gumo-customisation/node-pill-top" type="match" text="show">
 <div style="font-size: 0.8em;">
-<$transclude tiddler={{$:/plugins/mabuqian/gumo-customisation/node-explorer-colorful}} field=title mode=block/>
+<$transclude tiddler={{$:/plugins/mabuqian/gumo-customisation/node-explorer-colorful}} field=title mode=inline/>
 </div>
 </$reveal>

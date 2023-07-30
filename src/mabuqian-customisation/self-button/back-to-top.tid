@@ -1,0 +1,15 @@
+code-body: yes
+created: 20230702172132566
+creator: 马不前
+modified: 20230718062500764
+modifier: 马不前
+tags: $:/tags/ViewTemplate
+title: $:/plugins/mabuqian/gumo-customisation/back-to-top
+caption: 回到顶端按钮
+
+<$reveal state="$:/config/gumo-customisation/back-to-top" type="match" text="show">
+<$button popup=<<qualify "$:/state/popup/back-to-top">> tooltip="回到顶端" aria-label="回到顶端" class=<<tv-config-toolbar-class>> selectedClass="tc-selected" style="display: block;width: 100%;margin: 1em auto;">
+<$action-navigate $to=<<currentTiddler>>/>
+{{$:/core/images/up-arrow}}
+</$button>
+</$reveal>
