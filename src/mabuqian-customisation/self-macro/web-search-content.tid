@@ -1,0 +1,26 @@
+created: 20230402081157951
+creator: 马不前
+modified: 20230730123622188
+modifier: 马不前
+tags: 
+title: $:/plugins/mabuqian/gumo-customisation/web-search-content
+caption: 通过搜索嵌入网页内容
+type: text/vnd.tiddlywiki
+
+\define websc(web,word)
+\rules except wikilink
+<$wikify name="input" text="$web$/#$word$">
+<$list filter="[<__word__>trim[]!is[blank]]" variable=null>
+<a href=<<input>> target="_blank">$word$</a>
+<br>
+<iframe src=<<input>> width="100%" height="500px"></iframe>
+</$list>
+</$wikify>
+
+\end
+
+Search in [[WENAI|https://dongrentianyu.github.io/WENAI/]]: 
+<$edit-text  tiddler="$:/temp/search-WENAI" field="keywords" placeholder="search WENAI"/>
+
+<$macrocall $name="websc" web="https://dongrentianyu.github.io/WENAI" word={{$:/temp/search-WENAI!!keywords}} />
+

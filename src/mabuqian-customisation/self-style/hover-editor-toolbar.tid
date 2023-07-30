@@ -1,0 +1,21 @@
+tags: $:/tags/Stylesheet
+title: $:/plugins/mabuqian/gumo-customisation/hover-editor-toolbar
+caption: 悬浮编辑器工具栏
+type: text/vnd.tiddlywiki
+
+<$reveal state="$:/config/gumo-customisation/hover-editor-toolbar" type="match" text="show">
+.tc-editor-toolbar {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    position: sticky;
+    top: 50px;
+    background: fafaf1;
+    z-index: 500;
+}
+
+.tc-tiddler-preview {
+    overflow: unset;
+}
+</$reveal>

@@ -28,6 +28,8 @@ config
 * <<MBQ-link "fours/recent" >>
 * <<MBQ-link "fours/search" >>
 * <<MBQ-link "fours/thebrain" >>
+* <<MBQ-link "copy-tags-button" >>
+* <<MBQ-link "add-prefix" >>
 
 
 !! Macro
@@ -35,6 +37,7 @@ config
 * <<MBQ-checkbox "hover-effect-macro"  >>
 * <<MBQ-link "message-ai-user" >>
 * <<MBQ-link "message" >>
+* <<MBQ-link "web-search-content" >>
 
 !! Stylesheet
 
@@ -43,6 +46,7 @@ config
 * <<MBQ-checkbox "multi-column-dropdown-fixed" >>
 * <<MBQ-checkbox "consistent-width-in-zoomin-view" >>
 * <<MBQ-checkbox "widening-the-story-river-notebook" >>
+* <<MBQ-checkbox "hover-editor-toolbar" >>
 
 !! Function
 
@@ -50,3 +54,5 @@ config
 * <<MBQ-link "tag-cloud-display" >>
 * <<MBQ-checkbox "node-pill-top" >>
 * <<MBQ-checkbox "bilingual-fonts" >>
+* <<MBQ-checkbox "demo-convertable" >>
+* <<MBQ-link "homepage-footer" >>
