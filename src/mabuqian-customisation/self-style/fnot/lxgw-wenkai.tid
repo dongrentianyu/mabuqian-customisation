@@ -1,0 +1,12 @@
+code-body: yes
+created: 20230601122431844
+creator: 马不前
+modified: 20230718174504549
+modifier: 马不前
+revision: 0
+tags: $:/tags/RawMarkup
+caption: 霞鹜文楷
+title: $:/plugins/mabuqian/gumo-customisation/lxgw-wenkai
+type: text/html
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css" />

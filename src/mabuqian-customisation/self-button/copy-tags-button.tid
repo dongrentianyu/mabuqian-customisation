@@ -5,7 +5,6 @@ description: 复制标签
 modified: 20230207172842342
 modifier: 马不前
 tags: $:/tags/ViewToolbar
-caption: 复制标签
 title: $:/plugins/mabuqian/gumo-customisation/copy-tags-button
 type: text/vnd.tiddlywiki
 

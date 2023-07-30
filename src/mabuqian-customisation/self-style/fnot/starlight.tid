@@ -1,0 +1,15 @@
+tags: $:/tags/Stylesheet
+title: $:/plugins/mabuqian/gumo-customisation/starlight/styles.tid
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+/*
+Placeholder for a more thorough refinement of Snow White
+*/
+
+@font-face {
+	font-family: "Arvo";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Arvo"), url(<<datauri "$:/plugins/mabuqian/gumo-customisation/arvo.woff">>) format("woff");
+}
