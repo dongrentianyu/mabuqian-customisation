@@ -20,7 +20,7 @@ title: $:/plugins/mabuqian/gumo-customisation/multi-column-dropdown-fixed
     flex-wrap: wrap;
   }
   .tc-block-tags-dropdown {
-    min-width: 900px;
+    min-width: 650px;
     <$reveal state="$:/palette" type="match" text="$:/palettes/Vanilla">
     background-color: #eee;
     </$reveal>

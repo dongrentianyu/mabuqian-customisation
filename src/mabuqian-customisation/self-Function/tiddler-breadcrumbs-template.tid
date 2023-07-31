@@ -8,8 +8,8 @@ type: text/vnd.tiddlywiki
 use_apex_tag: true
 
 \define yetAgain()
-<$reveal type='match' state='Tiddler Breadcrumbs Template!!use_apex_tag' text='true'>
-	<$reveal type='match' state='!!title' text={{Tiddler Breadcrumbs Template!!apex_tag}}>
+<$reveal type='match' state='$:/plugins/mabuqian/gumo-customisation/tiddler-breadcrumbs-template!!use_apex_tag' text='true'>
+	<$reveal type='match' state='!!title' text={{$:/plugins/mabuqian/gumo-customisation/tiddler-breadcrumbs-template!!apex_tag}}>
 		<$link to=<<currentTiddler>>>
 			<$view field='title'/>
 		</$link>
@@ -26,7 +26,7 @@ use_apex_tag: true
 		<br>
 	</$reveal>
 </$reveal>
-<$reveal type='nomatch' state='Tiddler Breadcrumbs Template!!use_apex_tag' text='true'>
+<$reveal type='nomatch' state='$:/plugins/mabuqian/gumo-customisation/tiddler-breadcrumbs-template!!use_apex_tag' text='true'>
 	<$link to=<<currentTiddler>>>
 		<$view field='title'/>
 	</$link>
@@ -52,8 +52,8 @@ use_apex_tag: true
 
 \define finalFilter()
 <$set name=First filter="""$(TheFilter)$ +[last[]]""">
-	<$set name=End filter="""$(TheFilter)$ +[butlast[]]  +[butfirst[]] +[first{Tiddler Breadcrumbs Template!!length_limit}] +[reverse[]]""">
-		<$set name=Extra filter="""$(TheFilter)$ +[butlast[]] +[butfirst[]] +[butfirst{Tiddler Breadcrumbs Template!!length_limit}] +[limit[1]]""" emptyValue='[is[system]!is[system]]'>
+	<$set name=End filter="""$(TheFilter)$ +[butlast[]]  +[butfirst[]] +[first{$:/plugins/mabuqian/gumo-customisation/tiddler-breadcrumbs-template!!length_limit}] +[reverse[]]""">
+		<$set name=Extra filter="""$(TheFilter)$ +[butlast[]] +[butfirst[]] +[butfirst{$:/plugins/mabuqian/gumo-customisation/tiddler-breadcrumbs-template!!length_limit}] +[limit[1]]""" emptyValue='[is[system]!is[system]]'>
 			<<again>>
 		</$set>
 	</$set>
