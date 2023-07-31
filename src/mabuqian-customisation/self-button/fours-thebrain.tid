@@ -1,9 +1,6 @@
 caption: {{$:/plugins/mabuqian/gumo-customisation/fours/thebrain-icons}} 显示脑图
-created: 20230713013011671
-creator: 马不前
 description: 显示脑图
-modified: 20230714165630867
-modifier: 马不前
+list-after: $:/core/ui/Buttons/close
 tags: $:/tags/ViewToolbar
 title: $:/plugins/mabuqian/gumo-customisation/fours/thebrain
 
