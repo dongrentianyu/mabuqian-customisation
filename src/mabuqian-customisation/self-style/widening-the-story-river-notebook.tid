@@ -11,7 +11,7 @@ type: text/vnd.tiddlywiki
 <!--notebook主题自带了一个移动端配套插件，但会与jd的移动插件冲突，所以我只保留了notebook移动配套插件，如果换了其他主题需要加回来-->
 <$reveal state="$:/config/gumo-customisation/widening-the-story-river-notebook" type="match" text="show">
 @media only screen and (min-width: 767px){
-.tc-story-river {
+html .tc-story-river {
     padding: 6px 0 !important;
     width: 100% !important;
     max-width: 1200px !important;

@@ -2,6 +2,7 @@ tags: $:/tags/Stylesheet
 caption: notebook主题搜索框固定
 title: $:/plugins/mabuqian/gumo-customisation/search-box-fixed-notebook
 type: text/vnd.tiddlywiki
+code-body: yes
 
 <$reveal state="$:/config/gumo-customisation/search-box-fixed-notebook" type="match" text="show">
 /* Hide subtitle */
