@@ -5,10 +5,10 @@ title: $:/plugins/mabuqian/gumo-customisation/edit-font-size-CodeMirror
 type: text/vnd.tiddlywiki
 
 <$reveal state="$:/config/gumo-customisation/edit-font-size-CodeMirror" type="match" text="show">
-.CodeMirror {
-    height: auto;
+.CodeMirror-lines {
     cursor: text;
-    font-size: 35px;
-    line-height: 30px;
+    min-height: 5em;
+    font-size: 34px;
+    line-height: 40px;
 }
 </$reveal>
