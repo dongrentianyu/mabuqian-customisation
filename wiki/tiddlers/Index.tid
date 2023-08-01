@@ -1,5 +1,5 @@
 created: 20230721145148081
-modified: 20230731164722309
+modified: 20230801070947111
 tags: TableOfContents
 title: Index
 type: text/vnd.tiddlywiki
@@ -55,3 +55,12 @@ handleClick函数的关键点是:
 所以handleClick作为一个点击回调,其关键是调用setCount来更新count状态,从而实现点击计数的效果。它充分利用了React函数组件内部定义函数和闭包的机制。
 
 " >>
+
+<span class="myTOC">
+<$macrocall
+	$name="navx"
+	tag="TableOfContents"
+  selectedTiddler="$:/temp/toc/selectedTiddler"
+	unselectedText="<p>选择目录中的一个主题，点击箭头可展开主题。</p>"
+	missingText="<p>佚失条目。</p>"/>
+</span>

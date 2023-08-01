@@ -1,0 +1,13 @@
+caption: list-link-text
+tags: $:/tags/TextEditor/Snippet
+title: $:/plugins/mabuqian/gumo-customisation/Snippet/list-link-text
+type: text/vnd.tiddlywiki
+list-after: $:/language/Snippets/ListByTag
+
+<$list filter="[tag<currentTiddler>]">
+
+!!! <$link><<currentTiddler>></$link>
+
+ {{!!text}}
+
+</$list>

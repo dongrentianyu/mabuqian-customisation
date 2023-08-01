@@ -1,0 +1,7 @@
+caption: transclude-dynamic-embedding
+tags: $:/tags/TextEditor/Snippet
+title: $:/plugins/mabuqian/gumo-customisation/Snippet/transclude-dynamic-embedding
+type: text/vnd.tiddlywiki
+list-after: $:/language/Snippets/ListByTag
+
+<$transclude tiddler="" mode="block"/>

@@ -1,0 +1,37 @@
+code-body: yes
+caption: tabs加强版
+tags: $:/tags/Macro
+title: $:/plugins/mabuqian/gumo-customisation/tabs-enhanced
+
+\define navx(tag,sort:"",selectedTiddler:"$:/temp/toc/selectedTiddler",unselectedText,missingText,template:"")
+\whitespace trim
+<$tiddler tiddler={{{ [<__selectedTiddler__>get[text]] }}}>
+  <div class="tc-tabbed-table-of-contents">
+    <$linkcatcher to=<<__selectedTiddler__>>>
+      <div class="tc-table-of-contents">
+        <$macrocall $name="toc-selective-expandable" tag=<<__tag__>> sort=<<__sort__>> itemClassFilter="[all[current]] -[<__selectedTiddler__>get[text]]"/></div>
+    </$linkcatcher>
+    <div class="tc-tabbed-table-of-contents-content">
+      <$reveal stateTitle=<<__selectedTiddler__>> type="nomatch" text="">
+        <$transclude mode="block" tiddler=<<__template__>>>
+          <h1><$link><<toc-caption>></$link></h1>
+          <$transclude mode="block">$missingText$</$transclude>
+          <<tabs "[tag<currentTiddler>]" "tc-vertical">>
+        </$transclude>
+      </$reveal>
+      <$reveal stateTitle=<<__selectedTiddler__>> type="match" text="">
+        $unselectedText$
+      </$reveal>
+    </div>
+  </div>
+</$tiddler>
+\end
+
+<span class="myTOC">
+<$macrocall
+	$name="navx"
+	tag="TableOfContents"
+  selectedTiddler="$:/temp/toc/selectedTiddler"
+	unselectedText="<p>选择目录中的一个主题，点击箭头可展开主题。</p>"
+	missingText="<p>佚失条目。</p>"/>
+</span>

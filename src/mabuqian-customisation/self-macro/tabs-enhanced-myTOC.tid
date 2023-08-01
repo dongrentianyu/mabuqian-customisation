@@ -1,0 +1,11 @@
+code-body: yes
+caption: tabs加强版-样式
+tags: $:/tags/Stylesheet
+title: $:/plugins/mabuqian/gumo-customisation/tabs-enhanced-myTOC
+
+<!-- 修改下面的max-height数值就可以看到效果了-->
+<!-- 技术来源于EricShulman，我是在论坛上看到他的回答保存下来的。-->
+.colortext
+   { font-variant:small-caps; color: red; }
+.myTOC .tc-table-of-contents, .myTOC .tc-tabbed-table-of-contents-content
+   { max-height:400px; overflow: hidden auto; }
