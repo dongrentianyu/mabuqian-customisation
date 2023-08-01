@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
     position: -o-sticky;
     position: -ms-sticky;
     position: sticky;
-    top: 50px;
+    top: 50px !important; 
     background: fafaf1;
     z-index: 500;
 }
