@@ -20,7 +20,7 @@ title: $:/plugins/mabuqian/gumo-customisation/multi-column-dropdown-fixed
     flex-wrap: wrap;
   }
   .tc-block-tags-dropdown {
-    min-width: 650px;
+    min-width: 600px !important;
     <$reveal state="$:/palette" type="match" text="$:/palettes/Vanilla">
     background-color: #eee;
     </$reveal>
@@ -35,8 +35,13 @@ title: $:/plugins/mabuqian/gumo-customisation/multi-column-dropdown-fixed
   }
   .tc-block-dropdown.tc-block-tags-dropdown a,
   .tc-block-dropdown.tc-edit-type-dropdown a {
-    flex: 1 0 calc(15% / 1);
+    flex: 1 0 calc(20% / 1);
+		padding: 4px !important;
+		margin: 0px !important;
   }
+	button.tc-tag-label, span.tc-tag-label {
+    padding: 4px 4px !important;
+}
   .tc-edit-type-dropdown {
     max-width: 650px;
     <$reveal state="$:/palette" type="match" text="$:/palettes/Vanilla">
