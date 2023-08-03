@@ -40,6 +40,7 @@ config
 * <<MBQ-link "message" >>
 * <<MBQ-link "web-search-content" >>
 * <<MBQ-link  "tabs-enhanced" >>
+* <<MBQ-link "list-searchx" >>
 
 !! Stylesheet
 
@@ -50,6 +51,7 @@ config
 * <<MBQ-checkbox "widening-the-story-river-notebook" >>
 * <<MBQ-checkbox "hover-editor-toolbar" >>
 * <<MBQ-checkbox "search-box-fixed-notebook" >>
+* Dracula，一个暗色的调色，来源在url字段里
 
 !! Snippet
 
@@ -58,6 +60,7 @@ config
 * <<MBQ-link "Snippet/list-link-text" >>
 * <<MBQ-link "Snippet/tabs-enhancedtabs" >>
 * <<MBQ-link "Snippet/transclude-dynamic-embedding" >>
+* <<MBQ-link "Snippet/mermaid" >>
 
 !! Function
 

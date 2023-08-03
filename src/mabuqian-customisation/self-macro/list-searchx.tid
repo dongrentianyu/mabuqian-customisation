@@ -1,0 +1,18 @@
+tags: $:/tags/Macro
+caption: 只搜索不列出
+title: $:/plugins/mabuqian/gumo-customisation/list-searchx
+
+\define list-searchx(filter:[!is[system]] search:'search:title'template:'$:/core/ui/ListItemTemplate'class:my-3 stateTiddler placeholder:keywords)
+<$set filter="[[$:/temp/list-search]addsuffix[/$stateTiddler$]addsuffix<qualify>]"name=state>
+<div class=<<__class__>>>
+<$keyboard actions='<$action-deletetiddler $tiddler=<<state>>/>'key=escape>
+<$edit-text tiddler=<<state>>type=search tag=input default=''placeholder="$placeholder$"class=w-100/>
+</$keyboard>
+</div>
+<$reveal stateTitle=<<state>>stateField=text type=nomatch text=''class=<<__class__>>tag=div>
+<$set name=term tiddler=<<state>>field=text>
+<$list filter="$filter$+[$search$<term>]"template=<<__template__>>/>
+</$set>
+</$reveal>
+
+\end

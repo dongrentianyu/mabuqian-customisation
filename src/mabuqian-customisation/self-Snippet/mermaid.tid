@@ -1,0 +1,9 @@
+caption: mermaid
+tags: $:/tags/TextEditor/Snippet
+title: $:/plugins/mabuqian/gumo-customisation/Snippet/mermaid
+type: text/vnd.tiddlywiki
+list-after: $:/language/Snippets/ListByTag
+
+$$$text/vnd.tiddlywiki.mermaid
+
+$$$
