@@ -7,30 +7,43 @@ title: $:/plugins/mabuqian/gumo-customisation/message-ai-user
 \define message-ai(ai)
 <div class="ai-message">
    <div class="message-name">AI</div>&nbsp;&nbsp;
-     <div class="message-box">$ai$
-       </div>
-       <$button class="message-button"
+     <div class="message-box">
+        <div class="message-button">
+         <$button class="message-button"
         message="tm-copy-to-clipboard"
         param="$ai$"
         tooltip={{$:/language/Buttons/CopyToClipboard/Hint}} >
         copy
        </$button>
+       </div>
+       <br/>
+       <div class="message-box">
+       $ai$
+       </div>
+       </div>
 </div>
 
 \end
 
 \define message-user(user)
 <div id="chat-container">
-        <div class="user-message">
-                <$button class="message-button"
-                message="tm-copy-to-clipboard"
-                param="$ai$"
-                tooltip={{$:/language/Buttons/CopyToClipboard/Hint}} >
-                copy
-                </$button>
-                <div class="message-box">$user$</div>&nbsp;&nbsp;
-                <div class="message-name">M</div>
-            </div>
+  <div class="user-message">
+    <div class="message-box">
+       <div class="message-button">
+        <$button class="message-button"
+           message="tm-copy-to-clipboard"
+           param="$user$"
+           tooltip={{$:/language/Buttons/CopyToClipboard/Hint}} >
+             copy
+         </$button>
+         </div>
+         <br/>
+         <div class="message-box">
+         $user$  
+         </div>
+         </div>&nbsp;&nbsp;
+         <div class="message-name">M</div>
+    </div>
     </div>
 \end
 

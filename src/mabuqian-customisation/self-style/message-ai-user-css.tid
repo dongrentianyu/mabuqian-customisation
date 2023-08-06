@@ -28,6 +28,26 @@ title: $:/plugins/mabuqian/gumo-customisation/message-ai-user-css
             border-radius: 5px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
+        .message-button {
+            padding: 0px !important ;
+            background-color: #F0EBE3 !important ;
+            color: #AD8476 !important ;
+            border-radius: 4px !important;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s ease; 
+        }
+        .message-button:hover {
+         transform: translateY(-2px);
+         box-shadow: 0 6px 15px 0 rgba(255, 255, 255, 0.6);
+        } 
+        .message-button:active {
+         transform: translateY(0); 
+         box-shadow: 0 2px 8px 0 rgba(255, 255, 255, 0.6);
+        }
         .user-message .message-box {
             background-color: #1E90FF;
             color: #fff;
