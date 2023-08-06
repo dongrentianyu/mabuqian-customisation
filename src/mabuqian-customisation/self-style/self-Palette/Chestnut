@@ -1,29 +1,29 @@
-background:#F0EBE3
-page-background:#E9DFD7
-sidebar-tab-background:#F0EBE3
-sidebar-tab-background-selected:#CABAAE  
-sidebar-tab-foreground:#AD8476
-sidebar-tab-foreground-selected:#745247
-message-background:#FFE2D9
-notification-background:#E5DAD3
-primary:#745247
-button-background:#AD8476
-button-foreground:#F0EBE3
-modal-background:#F0EBE3
-modal-border:#DCC7C0
-external-link:#4E3B2E
-external-link-visited:#724F3A
-tiddler-background:#F0EBE3  
-tiddler-border:#E9DFD7
-tiddler-title-foreground:#4E382D
-dropdown-background:#F0EBE3
-dropdown-border:#DCC7C0
-dropdown-tab-background:#E5DAD3
-dropdown-tab-background-selected:#DCC7C0
-tag-background:#F8B8AF
-tag-foreground:#A23829
-alert-background:#FFE2D9
-alert-border:#FACABC 
-alert-highlight:#745247
-code-background:#FAF4F2  
-toolbar-button:#AD8476
+background: #F0EBE3
+page-background: #E9DFD7
+sidebar-tab-background: #F0EBE3
+sidebar-tab-background-selected: #CABAAE
+sidebar-tab-foreground: #AD8476
+sidebar-tab-foreground-selected: #745247
+message-background: #FFE2D9
+notification-background: #E5DAD3
+primary: #745247
+button-background: #AD8476
+button-foreground: #F0EBE3
+modal-background: #F0EBE3
+modal-border: #DCC7C0
+external-link: #4E3B2E
+external-link-visited: #724F3A
+tiddler-background: #F0EBE3
+tiddler-border: #E9DFD7
+tiddler-title-foreground: #4E382D
+dropdown-background: #F0EBE3
+dropdown-border: #DCC7C0
+dropdown-tab-background: #E5DAD3
+dropdown-tab-background-selected: #DCC7C0
+tag-background: #AD8476
+tag-foreground: #A23829
+alert-background: #FFE2D9
+alert-border: #FACABC
+alert-highlight: #745247
+code-background: #FAF4F2
+toolbar-button: #AD8476
