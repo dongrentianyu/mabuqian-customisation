@@ -1,0 +1,37 @@
+code-body: yes
+caption: 多选加编辑
+tags: $:/tags/Macro
+title: $:/plugins/mabuqian/gumo-customisation/list-select-edit
+
+\whitespace trim
+\define list-select-edit(name,size:"8",filter,field)
+<style>
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 10px;
+grid-row-gap: 0px;
+}
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+</style>
+<div class="parent">
+<div class="div1">
+<$select tiddler='$:/state/$name$' field='test' multiple size='$size$' class="w-100">
+<$list filter='$filter$'>
+<option><$view field='title'/></option>
+</$list>
+</$select>
+<$button>
+<$action-setfield $field="$field$" $value={{{ [[$:/state/$name$]get[test]] }}}   />
+确认添加
+</$button>
+</div>
+<div class="div2">
+$field$: {{!!$field$}}
+<$edit-text  field="$field$" class="w-100" tag=textarea/>
+</div>
+</div>
+\end
+

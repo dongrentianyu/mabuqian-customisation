@@ -1,0 +1,15 @@
+asd: 整理时的笔记
+created: 20230808040718101
+modified: 20230808041746099
+tags: 整理时的笔记 Index
+test: 整理时的笔记 Index
+title: list-select-edit展示
+type: text/vnd.tiddlywiki
+
+<<list-select-edit "meaning" size:"8" "[tag[TableOfContents]]" "test")>>
+
+list-select-edit是左边根据筛选器列出内容，而在右边给出一个编辑框。这样的作用在于方便快速选择，同时也能够手动编辑内容。
+
+有四个参数，分别是name,size:"8",filter,field。
+
+name是状态条目的名称，不过前面已经有状态条目的前缀了，只需要添加一个合适的名称就可以了。第二个size是显示在左边的列表内容的数量。filter，则是列出的内容的筛选器，展示的是title，理论上也可以改成展示其他内容，但感觉没必要。后面的field，则是要添加到的字段。我这里用的是action-setfield，而没有用action-listops，因为这个宏的用处，更多的就是提供快速选择，点击按钮就添加上去。用action-listops反而更麻烦。

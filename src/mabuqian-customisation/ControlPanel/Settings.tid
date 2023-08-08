@@ -41,6 +41,7 @@ config
 * <<MBQ-link "web-search-content" >>
 * <<MBQ-link  "tabs-enhanced" >>
 * <<MBQ-link "list-searchx" >>
+* <<MBQ-link "list-select-edit">>
 
 !! Stylesheet
 
