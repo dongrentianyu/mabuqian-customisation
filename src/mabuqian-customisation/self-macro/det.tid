@@ -1,0 +1,16 @@
+code-body: yes
+tags: $:/tags/Macro
+caption: details宏
+title: $:/plugins/mabuqian/gumo-customisation/det
+type: text/vnd.tiddlywiki
+
+\define det(name text)
+<details>
+<summary  style="cursor: pointer">$name$</summary>
+<p style="margin-left: 1em">$text$</p>
+</details>
+\end
+
+<<det "test" "这是一个测试条目">>
+
+<!--这个宏更好用，比设拉子的要好用一些好像，当然可调整的内容不多。调整起来相对更方便一点，同时下面的内容可以和上面的对齐。应该是当时群友搞的，忘了来源。--->

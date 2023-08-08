@@ -1,10 +1,12 @@
 created: 20230721145148081
-modified: 20230801070947111
+modified: 20230808082249604
 tags: TableOfContents
 title: Index
 type: text/vnd.tiddlywiki
 
 Some readme here.
+
+<<det "test" "这是一个测试条目">>
 
 this is a <<fc "test" >>.
 
