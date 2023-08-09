@@ -27,13 +27,13 @@ grid-row-gap: 0px;
 </div>
 <div class="div2">
 <$list filter='[list[$:/state/select-note/$name$!!testing]]'>
+
 <$link><<currentTiddler>></$link>
 <div style="font-size: 0.8em;">
 <$transclude tiddler={{$:/plugins/mabuqian/gumo-customisation/node-explorer-colorful}} field=title mode=inline/>
 </div>
 
 {{!!text}}
-
 <<tabs "[tag<currentTiddler>]" "$:/state/select-note/$name$" template:"$:/plugins/mabuqian/gumo-customisation/select-display-template-tabs">>
 
 </$list>
