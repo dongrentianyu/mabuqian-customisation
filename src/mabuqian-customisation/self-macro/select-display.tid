@@ -4,7 +4,7 @@ caption: 选择并展示
 title: $:/plugins/mabuqian/gumo-customisation/select-display
 type: text/vnd.tiddlywiki
 
-\define select-notes(name,filter,size:"12")
+\define select-display(name,filter,size:"12")
 \whitespace trim
 <style>
 .parent {
