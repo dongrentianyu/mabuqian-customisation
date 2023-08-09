@@ -43,6 +43,7 @@ config
 * <<MBQ-link "list-searchx" >>
 * <<MBQ-link "list-select-edit">>
 * <<MBQ-link "det">>
+* <<MBQ-link "select-display" >>
 
 !! Stylesheet
 

@@ -1,0 +1,41 @@
+code-body: yes
+tags: $:/tags/Macro
+caption: 选择并展示
+title: $:/plugins/mabuqian/gumo-customisation/select-display
+type: text/vnd.tiddlywiki
+
+\define select-notes(name,filter,size:"12")
+\whitespace trim
+<style>
+.parent {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 15px;
+grid-row-gap: 0px;
+}
+.div1 { grid-area: 1 / 1 / 2 / 3; }
+.div2 { grid-area: 1 / 3 / 2 / 8; }
+</style>
+<div class="parent">
+<div class="div1">
+<$select tiddler='$:/state/select-note/$name$' field='testing' multiple size='$size$' class="w-100">
+<$list filter='$filter$'>
+<option><$view field='title'/></option>
+</$list>
+</$select>
+</div>
+<div class="div2">
+<$list filter='[list[$:/state/select-note/$name$!!testing]]'>
+<$link><<currentTiddler>></$link>
+<div style="font-size: 0.8em;">
+<$transclude tiddler={{$:/plugins/mabuqian/gumo-customisation/node-explorer-colorful}} field=title mode=inline/>
+</div>
+{{!!text}}
+<<tabs "[tag<currentTiddler>]" "$:/state/select-note/$name$" template:"$:/plugins/mabuqian/gumo-customisation/select-display-template-tabs">>
+</$list>
+</div>
+</div>
+
+\end
+
