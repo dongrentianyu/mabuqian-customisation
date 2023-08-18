@@ -1,5 +1,5 @@
 created: 20230818014109728
-modified: 20230818014109728
+modified: 20230818191143402
 tags: select-field-search
 title: 单个筛选情况
 type: text/vnd.tiddlywiki
@@ -14,12 +14,41 @@ type: text/vnd.tiddlywiki
 </$list>
 ```
 
-上面的代码实现了一个功能，就是可以通过search筛选器里的值来实现精确筛选展示。其中`[search:test2:{$:/state/select-field-search/test2}]`需要查看文档里search筛选器的[[用法|https://bramchen.github.io/tw5-docs/zh-Hans/#search%20Operator]]，简单来说，就是可以通过多个筛选的值来进行传递。
+上面的代码实现了一个功能，就是可以通过search筛选器里的值来实现精确筛选展示。其中`[search:test2:{$:/state/select-field-search/test2}]`需要查看文档里search筛选器的[[用法|https://bramchen.github.io/tw5-docs/zh-Hans/#search%20Operator]]，简单来说，就是可以通过多个筛选的值来进行传递。同时我们可以借助[[reveal|https://bramchen.github.io/tw5-docs/zh-Hans/#RevealWidget]]来控制条目的展示，也就是如果不选择的话，就不展示内容。
 
-<$list filter="[!is[system]tag[示例条目]] +[search:test2:{$:/state/select-field-search/test2}]">
+不同的筛选器写法会得出不同的结果。
+
+# `[!is[system]tag[示例条目]] +[search:test2:{$:/state/select-field-search/test2}]`的写法，就会输出字段值中都含有选择内容的。
+# `[!is[system]tag[示例条目]] +[search:test2:anchored,{$:/state/select-field-search/test2}]`的写法，就会得到以选择的值开头的，因为里面增加了`anchored`选项。
+# `[!is[system]tag[示例条目]test2{$:/state/select-field-search/test2}]`的写法，就会强制筛选出对应的唯一值的。
+
+<$select tiddler='$:/state/select-field-search/test2' field="test2" tooltip='选择展示与否' default="不展示">
+<option>展示</option>
+<option>不展示</option>
+</$select>
+
+
+<$reveal type="match" stateTitle="$:/state/select-field-search/test2" stateField="test2" text="展示">
+
+<$list filter="[!is[system]tag[示例条目]] +[search:test2:anchored,{$:/state/select-field-search/test2}]">
 
 <$link><<currentTiddler>></$link> 
 
 字段test2的值：{{!!test2}}
 
 </$list>
+
+</$reveal>
+
+---
+<$reveal type="nomatch" state="$:/state/select-field-search/test2" text="">
+
+<$list filter="[!is[system]tag[示例条目]test2{$:/state/select-field-search/test2}]">
+
+<$link><<currentTiddler>></$link> 
+
+字段test2的值：{{!!test2}}
+
+</$list>
+
+</$reveal>

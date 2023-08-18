@@ -1,11 +1,11 @@
 created: 20230818004639732
 list: 基本说明 单个筛选情况 多个筛选值传递 更丰富的展示 select-filter-search 使用setvars插件
-modified: 20230818162939728
+modified: 20230818200613688
 tags: TableOfContents
 title: select-field-search
 type: text/vnd.tiddlywiki
 
-介绍一下[[$:/plugins/mabuqian/gumo-customisation/select-field-search]]的用法。
+介绍一下[[$:/plugins/mabuqian/gumo-customisation/select-field-search]]的用法。最终可以实现一个快速筛选的功能。结合动态表或者其他视图，可以达到不同视图切换的作用。当然这个就需要自定义，如果想要封装好了的，可以使用`$:/plugins/xp/aggregation`插件，直接调用里面的`aggregation`宏，以达到想要的效果。
 
 这是一个简单的宏，用来提供筛选。
 
