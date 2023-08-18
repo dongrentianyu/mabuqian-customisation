@@ -1,0 +1,7 @@
+created: 20230818163213028
+modified: 20230818163410651
+tags: select-field-search
+title: 其他说明
+type: text/vnd.tiddlywiki
+
+select还可以做成多选的状态，但多选的状态就很折腾人了。同样如果还有更多定制化需求的话，那最好还是自己读一下宏代码，重新编制一下，逻辑并不复杂。或者选择大胡子做的那个edit-list，他做的功能全面。

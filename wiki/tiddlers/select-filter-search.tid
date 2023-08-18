@@ -1,10 +1,13 @@
 created: 20230818015228702
-modified: 20230818015853496
+modified: 20230818163051097
 tags: select-field-search
 title: select-filter-search
 type: text/vnd.tiddlywiki
 
 类似的，我还搞了另一个宏，放在这一文件下面。
+
+<$edit-text tiddler="$:/state/select-filter-search/select-filter-search" field="sfs"/><p/>
+''$:/state/select-filter-search/select-filter-search的sfs'' 的值：{{$:/state/select-filter-search/select-filter-search!!sfs}}
 
 <<select-filter-search "[tag[示例条目]]" "select-filter-search" >>
 

@@ -1,5 +1,5 @@
 created: 20230818014216595
-modified: 20230818014616340
+modified: 20230818112940790
 tags: select-field-search
 title: 更丰富的展示
 type: text/vnd.tiddlywiki
@@ -18,3 +18,11 @@ type: text/vnd.tiddlywiki
 </div>
 
 这是设拉子插件里面的中一个示例，本来是用来展示图片的，但我觉得用来展示内容也是非常方便的。
+
+<div class="tc-cards">
+<$list filter="[!is[system]tag[示例条目]] +[search:test2:{$:/state/select-field-search/test2}] +[search:test3:{$:/state/select-field-search/test3}]">
+<$macrocall $name="flex-card" captionField="caption" descriptionField="text"/>
+</$list>
+</div>
+
+上面示例则是从官网中找来的例子。需要[[$:/_tw5.com-styles|https://bramchen.github.io/tw5-docs/zh-Hans/#%24%3A%2F_tw5.com-styles]]和[[$:/editions/tw5.com/wikitext-macros|https://bramchen.github.io/tw5-docs/zh-Hans/#%24%3A%2Feditions%2Ftw5.com%2Fwikitext-macros]]，在本站点是[[tc-cards]]和[[flex-card]]。

@@ -1,0 +1,49 @@
+author: 
+created: 20230818152118241
+modified: 20230818163604488
+tags: 
+title: 图书管理示例
+type: text/vnd.tiddlywiki
+出版年份: 
+图书分类: 
+
+\define testCreate()
+<$action-createtiddler $basetitle=<<now YYYY年MM月DD日hh:0mm:0ss>>   tags="Book"  text="""xxx""  /> 
+\end
+
+<div class="flex-row">
+    <div class="flex-col borderless">
+作者：<<edit-list id:a field:"author" filter:[tag[Book]each:list-item[author]sort[title]] find:or  focusPopup:yes  listwidth:"fit">>
+    </div>
+    <div class="flex-col borderless">
+图书分类：<<edit-list id:b field:"图书分类"  filter:[tag[Book]each:list-item[图书分类]sort[title]] find:or  focusPopup:yes listwidth:"fit" >>
+    </div>
+    <div class="flex-col borderless">
+出版年：<<edit-list id:c field:"出版年份"  filter:[tag[Book]each:list-item[出版年份]sort[title]] find:or  focusPopup:yes listwidth:"fit">>
+    </div>
+</div>
+
+
+
+
+<$edit-text tiddler="temp-bookstore" filed=text tag=input class="alert  alert-info  w-100" 
+ placeholder="MyLibreary" default=""/> <$button set="temp-bookstore" setTo=""  tooltip="clearsearchbox">x</$button> 
+
+<$setvars
+_a1={{!!author}}
+_b1={{!!图书分类}}
+_c1={{!!出版年份}}
+_d1={{temp-bookstore}}
+filter="a1 \ \ b1 \ \ c1 \ \ d1"
+>
+
+
+<h5>关键词匹配项：{{{=[tag[Book]search:tag,title,author,出版年份,图书分类<filter>count[]]}}}</h5>
+<$macrocall $name=table-dynamic filter="[tag[Book]search:tag,status,title,text,author,出版年份,图书分类 <filter>]" 
+class="w-100 thead-primary table-hover-cyan" 
+fields="tbl-checkbox tbl-expand title status 图书分类 author"
+ pagination="yes" 
+ caption=<<now>> 
+ stateTiddler="temp-bookstoresheet"
+footerRows="1" />
+</$setvars>

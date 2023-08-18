@@ -1,0 +1,15 @@
+created: 20230818151506241
+modified: 20230818163547338
+tags: select-field-search
+title: 使用setvars插件
+type: text/vnd.tiddlywiki
+
+最早想做类似的是，因为看到了葫芦老哥在直播中的分享[[太微中的影音库书库管理界面|https://www.bilibili.com/video/BV1os4y1A71h/]]，但研究半天没研究明白，后面才真正搞懂这个插件和展示内容。
+
+需要安装插件[[$:/plugins/tobibeer/setvars|http://tobibeer.github.io/tw5-plugins/#setvars]]，也可以在CPL中搜索安装。同时需要大胡子搞的[[edit-list|https://tiddlytools.com/edit-list.html]]，本站安装在[[TiddlyTools/Macros/edit-list]]。这两个文件是必不可少的。
+
+setvars插件简单来说，就是可以让多个属性值，放在一个变量里。相当于太微里set小工具，不过现在更普遍的是用let小工具。或者老一点写法是用var。这个插件是2015年开发出来的，是tiddlywiki5刚出来那段时间，一直到现今都可以正常使用，也足以证明tiddlywiki在向后兼容方面，做得非常好。具体用法可以看上面网站里的示例。但老实说里面写得并不是特别好，只能说是展示了原理，但并没有展示用途。示例还是要更丰富才好。
+
+edit-list的作用，则在于既可以选择，也可以编辑输入。而且还有很多样式或者其他自定义的选项，是个功能强大的宏。
+
+在[[图书管理示例]]有简单演示，可以查看对应源码学习定制。

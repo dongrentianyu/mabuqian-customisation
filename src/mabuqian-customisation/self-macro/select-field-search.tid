@@ -4,13 +4,15 @@ caption: select-field-search
 title: $:/plugins/mabuqian/gumo-customisation/select-field-search
 type: text/vnd.tiddlywiki
 
-\define select-field-search(field)
+\define select-field-search(field,filter:'[!is[system]]')
 \whitespace trim
 $field$&nbsp;&nbsp;<$select tiddler='$:/state/select-field-search/$field$'>
+<$set name="field-pattern" value={{$:/state/select-field-search/$field$!!sfs}}>
 <option></option>
-<$list filter='[!is[system]has[$field$]get[$field$]unique[]]'>
+<$list filter='$filter$ +[has[$field$]get[$field$]unique[]] +[regexp:<field-pattern>]'>
 <option><$view field='title'/></option>
 </$list>
+</$set>
 </$select>
 \end
 
@@ -20,9 +22,11 @@ $field$&nbsp;&nbsp;<$select tiddler='$:/state/select-field-search/$field$'>
 \define select-filter-search(filter,unique)
 \whitespace trim
 <$select tiddler='$:/state/select-filter-search/$unique$'>
+<$set name="field-pattern" value={{$:/state/select-filter-search/$unique$!!sfs}}>
 <option></option>
-<$list filter='$filter$'>
+<$list filter='$filter$ +[regexp:<field-pattern>]'>
 <option><$view field='title'/></option>
 </$list>
+</$set>
 </$select>
 \end

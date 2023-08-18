@@ -1,5 +1,6 @@
 created: 20230818004639732
-modified: 20230818015212395
+list: 基本说明 单个筛选情况 多个筛选值传递 更丰富的展示 select-filter-search 使用setvars插件
+modified: 20230818162939728
 tags: TableOfContents
 title: select-field-search
 type: text/vnd.tiddlywiki
@@ -8,8 +9,10 @@ type: text/vnd.tiddlywiki
 
 这是一个简单的宏，用来提供筛选。
 
-<<select-field-search "test2" >> <<select-field-search "test3" >>
+<$edit-text tiddler="$:/state/select-field-search/test2" field="sfs"/><p/>
+''$:/state/select-field-search/test2的sfs'' 的值：{{$:/state/select-field-search/test2!!sfs}}
 
-`<<select-field-search "test2" >>`里面只有一个参数，那就是字段名字。这是把所有非系统条目中，具有这个字段的值都列出来了。存储在状态条目`$:/state/select-field-search/$field$`中，像上面就是存储在`$:/state/select-field-search/test2`中，这个状态条目不会特别保存在wiki中。通过这个简单的宏，我们可以结合筛选器做到通过类似数据库管理筛选的功能。
 
-<<tabs "[tag[select-field-search]]" "单个筛选情况" "$:/state/select-field-search" >>
+<<select-field-search "test2" "[!is[system]tag[示例条目]]">> <<select-field-search "test3" >>
+
+<<tabs "[tag[select-field-search]]" "基本情况" "$:/state/select-field-search" >>
