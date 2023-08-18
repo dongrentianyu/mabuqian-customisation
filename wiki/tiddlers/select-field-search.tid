@@ -1,0 +1,15 @@
+created: 20230818004639732
+modified: 20230818015212395
+tags: TableOfContents
+title: select-field-search
+type: text/vnd.tiddlywiki
+
+介绍一下[[$:/plugins/mabuqian/gumo-customisation/select-field-search]]的用法。
+
+这是一个简单的宏，用来提供筛选。
+
+<<select-field-search "test2" >> <<select-field-search "test3" >>
+
+`<<select-field-search "test2" >>`里面只有一个参数，那就是字段名字。这是把所有非系统条目中，具有这个字段的值都列出来了。存储在状态条目`$:/state/select-field-search/$field$`中，像上面就是存储在`$:/state/select-field-search/test2`中，这个状态条目不会特别保存在wiki中。通过这个简单的宏，我们可以结合筛选器做到通过类似数据库管理筛选的功能。
+
+<<tabs "[tag[select-field-search]]" "单个筛选情况" "$:/state/select-field-search" >>

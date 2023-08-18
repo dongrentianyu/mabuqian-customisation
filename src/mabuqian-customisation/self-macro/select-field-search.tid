@@ -1,0 +1,28 @@
+code-body: yes
+tags: $:/tags/Macro
+caption: select-field-search
+title: $:/plugins/mabuqian/gumo-customisation/select-field-search
+type: text/vnd.tiddlywiki
+
+\define select-field-search(field)
+\whitespace trim
+$field$&nbsp;&nbsp;<$select tiddler='$:/state/select-field-search/$field$'>
+<option></option>
+<$list filter='[!is[system]has[$field$]get[$field$]unique[]]'>
+<option><$view field='title'/></option>
+</$list>
+</$select>
+\end
+
+<!-- 因为两个宏很相似，上面的是为了常见的字段方式，下面的则是为了筛选器的方式 -->
+<!-- Because the two macros are very similar, the above is for the common field method, while the below is for the filter method. -->
+
+\define select-filter-search(filter,unique)
+\whitespace trim
+<$select tiddler='$:/state/select-filter-search/$unique$'>
+<option></option>
+<$list filter='$filter$'>
+<option><$view field='title'/></option>
+</$list>
+</$select>
+\end

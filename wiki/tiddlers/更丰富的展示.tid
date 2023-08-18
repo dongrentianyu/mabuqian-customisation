@@ -1,0 +1,20 @@
+created: 20230818014216595
+modified: 20230818014616340
+tags: select-field-search
+title: 更丰富的展示
+type: text/vnd.tiddlywiki
+
+! 更丰富的展示
+
+<div class="flex-row">
+<$list filter="[!is[system]tag[示例条目]] +[search:test2:{$:/state/select-field-search/test2}] +[search:test3:{$:/state/select-field-search/test3}]">
+<div class="flex-col-1" style="min-height:180px">
+<$link to=<<currentTiddler>> >
+<h3><<currentTiddler>></h3>
+</$link>
+{{!!text}}
+</div>
+</$list>
+</div>
+
+这是设拉子插件里面的中一个示例，本来是用来展示图片的，但我觉得用来展示内容也是非常方便的。

@@ -1,0 +1,30 @@
+created: 20230818015228702
+modified: 20230818015853496
+tags: select-field-search
+title: select-filter-search
+type: text/vnd.tiddlywiki
+
+类似的，我还搞了另一个宏，放在这一文件下面。
+
+<<select-filter-search "[tag[示例条目]]" "select-filter-search" >>
+
+里面有两个参数，一个是筛选器，另一个则是状态条目的值。只需要填上一个名称就可以了。因为会自动生成类似`$:/state/select-filter-search/$unique$`的状态条目。
+
+然后通过上面的，我们一样可以和字段的方式一样进行筛选。
+
+
+```
+<$list filter="[!is[system]tag[示例条目]] +[search:title:{$:/state/select-filter-search/select-filter-search}]">
+
+<$link><<currentTiddler>></$link>
+
+</$list>
+```
+
+我这里改成了查找条目标题字段，也可以改成任意字段。
+
+<$list filter="[!is[system]tag[示例条目]] +[search:title:{$:/state/select-filter-search/select-filter-search}]">
+
+<$link><<currentTiddler>></$link>
+
+</$list>

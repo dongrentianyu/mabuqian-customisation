@@ -1,0 +1,41 @@
+created: 20230818014154859
+modified: 20230818014154859
+tags: select-field-search
+title: 多个筛选值传递
+type: text/vnd.tiddlywiki
+
+! 多个筛选值传递
+
+```
+<$list filter="[!is[system]tag[示例条目]] +[search:test2:{$:/state/select-field-search/test2}] +[search:test3:{$:/state/select-field-search/test3}]">
+
+<$link><<currentTiddler>></$link> 
+
+字段test2的值：{{!!test2}}
+
+字段test3的值：{{!!test3}}
+
+</$list>
+```
+
+上面代码就是在这个基础上进行展示实现的。
+
+<$list filter="[!is[system]tag[示例条目]] +[search:test2:{$:/state/select-field-search/test2}] +[search:test3:{$:/state/select-field-search/test3}]">
+
+<$link><<currentTiddler>></$link> 
+
+字段test2的值：{{!!test2}}
+
+字段test3的值：{{!!test3}}
+
+</$list>
+
+当然组合的越多，筛选出来的结果就越少。这就可以方便我们筛选出我们想要的。比如筛选出2020年出的美国电影。这里就可以有三个字段，分别是发布年份2020年，国家美国，类别电影。当然如果自己还有更多可以细分的，那就更容易找到想要的。
+
+上面示例中，我们选择test2的字段为2，就会发现有两个条目，分别是示例条目2和示例条目4。接着我们再选择test3为2，那么就只会剩下示例条目2，如果我们选择1，那就只会展示示例条目4，也就是通过这种方式快速找到我们想要的条目。
+
+好吧，不能这样写`[search:test2,test3:{$:/state/select-field-search/test2},{$:/state/select-field-search/test3}]`，这样写并不能取得交集的结果，因为这样筛选的意思是，从之前传入的筛选条目中，筛选其中test2和test3字段，如果里面有`$:/state/select-field-search/test2`和`$:/state/select-field-search/test3`的值的话。如果我们前面test2的值选择了2，那后面我们test3的值选择了1，也不会精确筛选到示例条目4，因为示例条目2的test2值中符合筛选的2，所以示例条目2也一样被保留下来了。
+
+一船如果是像中文里地区之类的，可能不太会遇到这种情况。但如果是数字，就很有可能会遇到类似的情况了。
+
+而通过`[!is[system]tag[示例条目]] +[search:test2:{$:/state/select-field-search/test2}] +[search:test3:{$:/state/select-field-search/test3}]`的筛选方式，我们就可以得到集中的交集条目了。因为前面筛选的结果会传递到后面的筛选中去。如果状态条目为空，那就没有任何影响，甚至不会处理是否有test2字段。这是非常厉害的。

@@ -1,0 +1,25 @@
+created: 20230818014109728
+modified: 20230818014109728
+tags: select-field-search
+title: 单个筛选情况
+type: text/vnd.tiddlywiki
+
+! 单个筛选情况
+
+```
+<$list filter="[!is[system]tag[示例条目]] +[search:test2:{$:/state/select-field-search/test2}]">
+
+<$link><<currentTiddler>></$link>
+
+</$list>
+```
+
+上面的代码实现了一个功能，就是可以通过search筛选器里的值来实现精确筛选展示。其中`[search:test2:{$:/state/select-field-search/test2}]`需要查看文档里search筛选器的[[用法|https://bramchen.github.io/tw5-docs/zh-Hans/#search%20Operator]]，简单来说，就是可以通过多个筛选的值来进行传递。
+
+<$list filter="[!is[system]tag[示例条目]] +[search:test2:{$:/state/select-field-search/test2}]">
+
+<$link><<currentTiddler>></$link> 
+
+字段test2的值：{{!!test2}}
+
+</$list>

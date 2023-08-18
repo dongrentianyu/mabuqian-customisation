@@ -44,6 +44,7 @@ config
 * <<MBQ-link "list-select-edit">>
 * <<MBQ-link "det">>
 * <<MBQ-link "select-display" >>
+* <<MBQ-link "select-field-search" >>
 
 !! Stylesheet
 

@@ -1,12 +1,11 @@
 asd: 整理时的笔记
 created: 20230808040718101
-modified: 20230808041746099
+modified: 20230818004955240
 tags: 整理时的笔记 Index
-test: 整理时的笔记 Index
 title: list-select-edit展示
 type: text/vnd.tiddlywiki
 
-<<list-select-edit "meaning" size:"8" "[tag[TableOfContents]]" "test")>>
+<<list-select-edit "meaning" size:"8" "[tag[TableOfContents]]" "test1")>>
 
 list-select-edit是左边根据筛选器列出内容，而在右边给出一个编辑框。这样的作用在于方便快速选择，同时也能够手动编辑内容。
 
