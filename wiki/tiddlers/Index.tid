@@ -1,5 +1,5 @@
 created: 20230721145148081
-modified: 20230809190342288
+modified: 20230818164513689
 tags: 
 title: Index
 type: text/vnd.tiddlywiki
@@ -66,3 +66,5 @@ handleClick函数的关键点是:
 	unselectedText="<p>选择目录中的一个主题，点击箭头可展开主题。</p>"
 	missingText="<p>佚失条目。</p>"/>
 </span>
+
+<$transclude tiddler="$:/plugins/mabuqian/gumo-customisation/homepage-footer" mode="block"/>
