@@ -1,6 +1,6 @@
 created: 20230818004639732
 list: 基本说明 单个筛选情况 多个筛选值传递 更丰富的展示 select-filter-search 使用setvars插件
-modified: 20230819070503225
+modified: 20230819080435809
 tags: TableOfContents
 title: select-field-search
 type: text/vnd.tiddlywiki
@@ -13,6 +13,8 @@ type: text/vnd.tiddlywiki
 ''$:/state/select-field-search/test2的sfs'' 的值：{{$:/state/select-field-search/test2!!sfs}}
 
 
-<<select-field-search "test2" "[!is[system]tag[示例条目]]">> <<select-field-search "test3" >>
+<<select-field-search "test2" "[!is[system]tag[示例条目]]">> <<select-field-search "test3" >> <<select-field-search "tags" >>
+
+<<select-filter-search "[!is[system]]" "test-tags" >>
 
 <<tabs "[tag[select-field-search]]" "基本说明" "$:/state/select-field-search" >>
