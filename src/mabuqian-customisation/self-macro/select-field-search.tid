@@ -9,7 +9,7 @@ type: text/vnd.tiddlywiki
 $field$&nbsp;&nbsp;<$select tiddler='$:/state/select-field-search/$field$'>
 <$set name="field-pattern" value={{$:/state/select-field-search/$field$!!sfs}}>
 <option></option>
-<$list filter='$filter$ +[has[$field$]get[$field$]unique[]enlist-input[]!prefix[$:/]] +[regexp:<field-pattern>]'>
+<$list filter='$filter$ +[has[$field$]get[$field$]enlist-input[]!prefix[$:/]unique[]] +[regexp:<field-pattern>]'>
 <option><$view field='title'/></option>
 </$list>
 </$set>
@@ -24,7 +24,7 @@ $field$&nbsp;&nbsp;<$select tiddler='$:/state/select-field-search/$field$'>
 <$select tiddler='$:/state/select-filter-search/$unique$'>
 <$set name="field-pattern" value={{$:/state/select-filter-search/$unique$!!sfs}}>
 <option></option>
-<$list filter='$filter$ +[enlist-input[]!prefix[$:/]] +[regexp:<field-pattern>]'>
+<$list filter='$filter$ +[enlist-input[]!prefix[$:/]unique[]] +[regexp:<field-pattern>]'>
 <option><$view field='title'/></option>
 </$list>
 </$set>
