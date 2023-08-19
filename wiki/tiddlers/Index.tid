@@ -1,10 +1,12 @@
 created: 20230721145148081
-modified: 20230818164513689
+modified: 20230819162006954
 tags: 
 title: Index
 type: text/vnd.tiddlywiki
 
 Some readme here.
+
+编辑栏中新增了一个按钮，可以直接点击保存当前条目内容，保存修改后的内容。
 
 <<det "test" "这是一个测试条目">>
 

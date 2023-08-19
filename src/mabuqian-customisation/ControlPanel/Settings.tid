@@ -31,6 +31,7 @@ config
 * <<MBQ-link "copy-tags-button" >>
 * <<MBQ-link "add-prefix" >>
 * <<MBQ-checkbox "back-to-top" >>
+* <<MBQ-link "save-editor" >>
 
 
 !! Macro
