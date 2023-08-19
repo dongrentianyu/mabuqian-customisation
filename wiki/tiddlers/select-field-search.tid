@@ -1,6 +1,6 @@
 created: 20230818004639732
 list: 基本说明 单个筛选情况 多个筛选值传递 更丰富的展示 select-filter-search 使用setvars插件
-modified: 20230818200613688
+modified: 20230819070503225
 tags: TableOfContents
 title: select-field-search
 type: text/vnd.tiddlywiki
@@ -15,4 +15,4 @@ type: text/vnd.tiddlywiki
 
 <<select-field-search "test2" "[!is[system]tag[示例条目]]">> <<select-field-search "test3" >>
 
-<<tabs "[tag[select-field-search]]" "基本情况" "$:/state/select-field-search" >>
+<<tabs "[tag[select-field-search]]" "基本说明" "$:/state/select-field-search" >>
