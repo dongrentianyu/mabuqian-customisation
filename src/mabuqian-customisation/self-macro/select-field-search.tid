@@ -4,10 +4,10 @@ caption: select-field-search
 title: $:/plugins/mabuqian/gumo-customisation/select-field-search
 type: text/vnd.tiddlywiki
 
-\define select-field-search(field,filter:'[!is[system]]')
+\define select-field-search(field,name,filter:'[!is[system]]')
 \whitespace trim
-$field$&nbsp;&nbsp;<$select tiddler='$:/state/select-field-search/$field$'>
-<$set name="field-pattern" value={{$:/state/select-field-search/$field$!!sfs}}>
+$field$&nbsp;&nbsp;<$select tiddler='$:/state/select-field-search/$name$'>
+<$set name="field-pattern" value={{$:/state/select-field-search/$name$!!sfs}}>
 <option></option>
 <$list filter='$filter$ +[has[$field$]get[$field$]enlist-input[]!prefix[$:/]unique[]] +[regexp:<field-pattern>]'>
 <option><$view field='title'/></option>
@@ -16,10 +16,10 @@ $field$&nbsp;&nbsp;<$select tiddler='$:/state/select-field-search/$field$'>
 </$select>
 \end
 
-\define select-field-search-noenlist(field,filter:'[!is[system]]')
+\define select-field-search-noenlist(field,name,filter:'[!is[system]]')
 \whitespace trim
-$field$&nbsp;&nbsp;<$select tiddler='$:/state/select-field-search/$field$'>
-<$set name="field-pattern" value={{$:/state/select-field-search/$field$!!sfs}}>
+$field$&nbsp;&nbsp;<$select tiddler='$:/state/select-field-search/$name$'>
+<$set name="field-pattern" value={{$:/state/select-field-search/$name$!!sfs}}>
 <option></option>
 <$list filter='$filter$ +[has[$field$]get[$field$]!prefix[$:/]unique[]] +[regexp:<field-pattern>]'>
 <option><$view field='title'/></option>
@@ -32,10 +32,10 @@ $field$&nbsp;&nbsp;<$select tiddler='$:/state/select-field-search/$field$'>
 <!-- 增加了一个新的宏，其实这个宏和最顶上的宏的区别就在于取消了enlist，这样应该就不会产生分裂的情况。 -->
 <!-- Because the two macros are very similar, the above is for the common field method, while the below is for the filter method. -->
 
-\define select-filter-search(filter,unique)
+\define select-filter-search(filter,name)
 \whitespace trim
-<$select tiddler='$:/state/select-filter-search/$unique$'>
-<$set name="field-pattern" value={{$:/state/select-filter-search/$unique$!!sfs}}>
+<$select tiddler='$:/state/select-filter-search/$name$'>
+<$set name="field-pattern" value={{$:/state/select-filter-search/$name$!!sfs}}>
 <option></option>
 <$list filter='$filter$ +[enlist-input[]!prefix[$:/]unique[]] +[regexp:<field-pattern>]'>
 <option><$view field='title'/></option>
