@@ -16,7 +16,20 @@ $field$&nbsp;&nbsp;<$select tiddler='$:/state/select-field-search/$field$'>
 </$select>
 \end
 
+\define select-field-search-noenlist(field,filter:'[!is[system]]')
+\whitespace trim
+$field$&nbsp;&nbsp;<$select tiddler='$:/state/select-field-search/$field$'>
+<$set name="field-pattern" value={{$:/state/select-field-search/$field$!!sfs}}>
+<option></option>
+<$list filter='$filter$ +[has[$field$]get[$field$]!prefix[$:/]unique[]] +[regexp:<field-pattern>]'>
+<option><$view field='title'/></option>
+</$list>
+</$set>
+</$select>
+\end
+
 <!-- 因为两个宏很相似，上面的是为了常见的字段方式，下面的则是为了筛选器的方式 -->
+<!-- 增加了一个新的宏，其实这个宏和最顶上的宏的区别就在于取消了enlist，这样应该就不会产生分裂的情况。 -->
 <!-- Because the two macros are very similar, the above is for the common field method, while the below is for the filter method. -->
 
 \define select-filter-search(filter,unique)
