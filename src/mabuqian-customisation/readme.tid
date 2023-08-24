@@ -13,3 +13,5 @@ type: text/vnd.tiddlywiki
 简单做了一个message宏，用来展示群聊消息，或者对话消息。当然最初是因为做成ai与用户对话的形式。因为ai发展迅速，有些内容确实很有价值和意义值得保存下来。但展示的空间很大，有些浪费掉了。但也能接受。
 
 英文字体来自官方插件`$:/themes/tiddlywiki/starlight`，中文字体是霞鹜文楷。英文字体文件比较小，直接放进去了，中文字体文件比较大，放进去会严重影响性能，就用了在线引用的形式。如果没有联网，就加载不了。
+
+[[这里|$:/plugins/mabuqian/gumo-customisation/Components/clock]]有一个时钟。因为需要echarts插件。

@@ -46,6 +46,7 @@ config
 * <<MBQ-link "det">>
 * <<MBQ-link "select-display" >>
 * <<MBQ-link "select-field-search" >>
+* <<MBQ-link "Components/donut-chart-macro" >>
 
 !! Stylesheet
 
@@ -90,6 +91,7 @@ config
 * <<MBQ-link "homepage-footer" >>
 * <<MBQ-checkbox "tiddler-breadcrumbs-template" >>
 * <<MBQ-link "display-modified-shadow-tiddlers" >>
+* <<MBQ-link "Components/clock" >>
 
 因为太微特殊的影子条目机制，所以只能通过手动创建按钮来使用notebook主题固定搜索框功能。
 

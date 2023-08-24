@@ -1,0 +1,5 @@
+title: $:/plugins/mabuqian/gumo-customisation/Components/clock
+caption: 简单时钟
+type: text/vnd.tiddlywiki
+
+<$echarts $text={{$:/plugins/mabuqian/gumo-customisation/Components/clock-data}} $height="600px"/>
