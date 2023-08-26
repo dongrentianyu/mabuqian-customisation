@@ -1,4 +1,5 @@
 title: $:/plugins/mabuqian/gumo-customisation/select-display-template-tabs
+code-body: yes
 type: text/vnd.tiddlywiki
 
 <$tiddler tiddler=<<currentTab>>>
