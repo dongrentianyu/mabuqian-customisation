@@ -6,7 +6,7 @@ type: text/vnd.tiddlywiki
 
 \define select-field-search(field,name,filter:'[!is[system]]')
 \whitespace trim
-$field$&nbsp;&nbsp;<$select tiddler='$:/state/select-field-search/$name$'>
+<$select tiddler='$:/state/select-field-search/$name$'>
 <$set name="field-pattern" value={{$:/state/select-field-search/$name$!!sfs}}>
 <option></option>
 <$list filter='$filter$ +[has[$field$]get[$field$]enlist-input[]!prefix[$:/]unique[]] +[regexp:<field-pattern>]'>
@@ -18,7 +18,7 @@ $field$&nbsp;&nbsp;<$select tiddler='$:/state/select-field-search/$name$'>
 
 \define select-field-search-noenlist(field,name,filter:'[!is[system]]')
 \whitespace trim
-$field$&nbsp;&nbsp;<$select tiddler='$:/state/select-field-search/$name$'>
+<$select tiddler='$:/state/select-field-search/$name$'>
 <$set name="field-pattern" value={{$:/state/select-field-search/$name$!!sfs}}>
 <option></option>
 <$list filter='$filter$ +[has[$field$]get[$field$]!prefix[$:/]unique[]] +[regexp:<field-pattern>]'>
