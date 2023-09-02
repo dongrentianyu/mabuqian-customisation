@@ -1,5 +1,5 @@
 created: 20230721145148081
-modified: 20230819162006954
+modified: 20230902111032478
 tags: 
 title: Index
 type: text/vnd.tiddlywiki
@@ -11,6 +11,8 @@ Some readme here.
 <<det "test" "这是一个测试条目">>
 
 this is a <<fc "test" >>.
+
+---
 
 <<message "AI" "hi,the world" >>
 
