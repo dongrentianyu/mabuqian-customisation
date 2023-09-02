@@ -57,6 +57,7 @@ config
 * <<MBQ-checkbox "widening-the-story-river-notebook" >>
 * <<MBQ-checkbox "hover-editor-toolbar" >>
 * <<MBQ-checkbox "search-box-fixed-notebook" >>
+* <<MBQ-checkbox "hr" >>
 
 !! Palette
 
