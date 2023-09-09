@@ -1,0 +1,13 @@
+created: 20230909164747750
+modified: 20230909172104248
+tags: 
+title: mermaid相关讨论
+type: text/vnd.tiddlywiki
+
+现在还不清楚是原生的mermaid不支持左方向箭头，还是插件不支持。我看原生的好像也不能够实现。这一点相比graphviz还是差了一点。好吧，大部分时候都显示不出箭头，好像只有右方向箭头可以正确展示出来。感觉有些可惜啊。
+
+看来只需要完成这些就够了啊，我原以为还要做很多功能，比如虚线什么的，在线上展示文字什么的，或者其他类型的图。我发现有一部分是不支持的。显示出来效果也不好。可能就这样放弃了。算了，线上展示内容的就不做了，感觉没必要。而且语法也很简单。
+
+` A---|This is the text|B`大概就是这样。如果要用代码实现，那可太复杂了。
+
+<$transclude tiddler="$:/plugins/mabuqian/gumo-customisation/mermaid" mode="block"/>

@@ -1,0 +1,63 @@
+title: $:/plugins/mabuqian/gumo-customisation/mermaid
+caption: 简单mermaid
+type: text/vnd.tiddlywiki
+
+节点名称：<br>
+<$edit-text tiddler="$:/state/gumo/mermaid/node-name" class="w-100" tag=input/>
+
+left:<$select tiddler='$:/state/gumo/mermaid/node-select/left'>
+<option></option>
+<$list filter='[[$:/state/gumo/mermaid/node-name]get[text]enlist-input[]]'>
+<option><$view field='title'/></option>
+</$list>
+</$select>
+line:<$select tiddler='$:/state/gumo/mermaid/node-select/line'>
+<option></option>
+<option>实线</option>
+<option>虚线</option>
+<option>右箭头</option>
+</$select>
+right:<$select tiddler='$:/state/gumo/mermaid/node-select/right'>
+<option></option>
+<$list filter='[[$:/state/gumo/mermaid/node-name]get[text]enlist-input[]]'>
+<option><$view field='title'/></option>
+</$list>
+</$select>
+
+<$let
+a="[["
+b="]]"
+c=" "
+f="&#45;&#45;&#45;"
+g="&#45;&#45;>"
+h="&#45;.&#45;"
+left={{{ [[$:/state/gumo/mermaid/node-select/left]get[text]] }}}
+right={{{ [[$:/state/gumo/mermaid/node-select/right]get[text]] }}} 
+line={{{ [[$:/state/gumo/mermaid/node-select/line]get[text]match[实线]then<f>] [[$:/state/gumo/mermaid/node-select/line]get[text]match[右箭头]then<g>] [[$:/state/gumo/mermaid/node-select/line]get[text]match[虚线]then<h>] +[first[1]]}}}
+e={{{ [<left>addsuffix<c>addsuffix<line>addsuffix<c>addsuffix<right>]  }}}
+>
+<$button>
+<$action-listops $tiddler="$:/state/gumo/mermaid/content" $field="mermaid" $subfilter="[<e>]" />
+<$action-setfield $tiddler="$:/state/gumo/mermaid/node-select/left" text=""/>
+<$action-setfield $tiddler="$:/state/gumo/mermaid/node-select/right" text=""/>
+<$action-setfield $tiddler="$:/state/gumo/mermaid/node-select/line" text=""/>
+填充内容
+</$button>
+</$let>
+<$let txt="""
+<$list filter="[[$:/state/gumo/mermaid/content]get[mermaid]enlist-input[]]" variable="content">
+<<content>>
+</$list>
+""">
+<$wikify name="cliptxt" output="formattedtext" text=<<txt>>>
+<$button>
+<$action-sendmessage $message="tm-copy-to-clipboard" $param=<<cliptxt>> />
+复制内容
+</$button>
+<$button>
+<$action-setfield $tiddler="$:/state/gumo/mermaid/node-name" text=""/>
+清除内容
+</$button>
+<div style="white-space:pre;"><<txt>></div>
+</$wikify>
+</$let>

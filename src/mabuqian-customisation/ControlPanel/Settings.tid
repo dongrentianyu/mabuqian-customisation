@@ -93,6 +93,7 @@ config
 * <<MBQ-checkbox "tiddler-breadcrumbs-template" >>
 * <<MBQ-link "display-modified-shadow-tiddlers" >>
 * <<MBQ-link "Components/clock" >>
+* <<MBQ-link "mermaid" >>
 
 因为太微特殊的影子条目机制，所以只能通过手动创建按钮来使用notebook主题固定搜索框功能。
 
