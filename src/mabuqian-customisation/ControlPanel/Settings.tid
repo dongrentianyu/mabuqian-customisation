@@ -81,6 +81,7 @@ config
 * <<MBQ-link "Snippet/tabs-enhancedtabs" >>
 * <<MBQ-link "Snippet/transclude-dynamic-embedding" >>
 * <<MBQ-link "Snippet/mermaid" >>
+* <<MBQ-link "Snippet/transclude-variable" >>
 
 !! Function
 

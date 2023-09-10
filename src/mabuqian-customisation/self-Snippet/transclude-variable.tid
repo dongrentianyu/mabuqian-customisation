@@ -1,0 +1,7 @@
+caption: transclude-variable
+tags: $:/tags/TextEditor/Snippet
+title: $:/plugins/mabuqian/gumo-customisation/Snippet/transclude-variable
+type: text/vnd.tiddlywiki
+list-after: $:/language/Snippets/ListByTag
+
+<$transclude $variable="" />
