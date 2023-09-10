@@ -1,0 +1,16 @@
+title: $:/plugins/mabuqian/gumo-customisation/edit-copy
+caption: 编辑且复制
+code-body: yes
+type: text/vnd.tiddlywiki
+
+<$edit-text tiddler="$:/state/gumo/edit-copy" class="w-100" tag=input/>
+
+<$transclude $variable="code" src={{$:/state/gumo/edit-copy}} />
+
+<$set name="myList" value={{$:/state/gumo/edit-copy}}>
+<$list filter="[enlist<myList>]" variable="this-code">
+
+<$transclude $variable="code" src={{{ [<this-code>] }}} />
+
+</$list>
+</$set>
