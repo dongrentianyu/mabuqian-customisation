@@ -32,6 +32,7 @@ config
 * <<MBQ-link "add-prefix" >>
 * <<MBQ-checkbox "back-to-top" >>
 * <<MBQ-link "save-editor" >>
+* <<MBQ-link "simple-quote" >>
 
 
 !! Macro
