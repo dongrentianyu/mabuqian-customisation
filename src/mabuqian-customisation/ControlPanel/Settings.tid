@@ -14,3 +14,5 @@ tags: $:/tags/ControlPanel/SettingsTab
 </$action-createtiddler>
 创建notebook主题固定搜索框条目
 </$button>
+
+[[search-box-fixed-notebook]]
