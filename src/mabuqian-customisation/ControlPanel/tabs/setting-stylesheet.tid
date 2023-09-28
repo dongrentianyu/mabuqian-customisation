@@ -1,0 +1,21 @@
+title: $:/plugins/mabuqian/gumo-customisation/ControlPanel/Settings/stylesheet
+tags: $:/tags/MBQ/settings
+caption: Stylesheet
+
+\import [[$:/plugins/mabuqian/gumo-customisation/ControlPanel/Settings/define]]
+
+!! Stylesheet
+
+<div style="column-count:2;">
+
+* <<MBQ-checkbox "edit-font-size-CodeMirror" >>
+* <<MBQ-checkbox "headers-separate-from-buttons" >>
+* <<MBQ-checkbox "multi-column-dropdown-fixed" >>
+* <<MBQ-checkbox "consistent-width-in-zoomin-view" >>
+* <<MBQ-checkbox "widening-the-story-river-notebook-1200" >>
+* <<MBQ-checkbox "widening-the-story-river-notebook-1500" >>
+* <<MBQ-checkbox "hover-editor-toolbar" >>
+* <<MBQ-checkbox "search-box-fixed-notebook" >>
+* <<MBQ-checkbox "hr" >>
+
+</div>

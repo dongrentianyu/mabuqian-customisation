@@ -1,0 +1,24 @@
+title: $:/plugins/mabuqian/gumo-customisation/ControlPanel/Settings/palette
+tags: $:/tags/MBQ/settings
+caption: Palette
+
+\import [[$:/plugins/mabuqian/gumo-customisation/ControlPanel/Settings/define]]
+
+!! Palette
+
+* 好的配色，可以极大增强wiki的颜值，借助ai设计了一些配色，可复制代码使用
+* 以浅色调为主，有点单调，因为太复杂的配色ai写不出来，写得非常混乱
+
+<div style="column-count:2;">
+
+* [[Dracula]]，一个暗色的调色，来源在url字段里
+* <<MBQ-link  "palette/blueish-white">>
+* <<MBQ-link  "palette/brownish-yellow">>
+* <<MBQ-link  "palette/elegant-purple">>
+* <<MBQ-link  "palette/pinkish-rosy">>
+* <<MBQ-link  "palette/aqua-blue" >>
+* <<MBQ-link  "palette/pastel-green" >>
+* <<MBQ-link  "palette/plain-silver" >>
+* <<MBQ-link  "palette/Chestnut" >>
+
+</div>

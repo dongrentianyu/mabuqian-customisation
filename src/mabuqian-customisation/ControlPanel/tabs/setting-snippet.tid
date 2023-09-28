@@ -1,0 +1,19 @@
+title: $:/plugins/mabuqian/gumo-customisation/ControlPanel/Settings/snippet
+tags: $:/tags/MBQ/settings
+caption: Snippet
+
+\import [[$:/plugins/mabuqian/gumo-customisation/ControlPanel/Settings/define]]
+
+!! Snippet
+
+<div style="column-count:2;">
+
+* <<MBQ-link "Snippet/comment" >>
+* <<MBQ-link "Snippet/hard-line-feed" >>
+* <<MBQ-link "Snippet/list-link-text" >>
+* <<MBQ-link "Snippet/tabs-enhancedtabs" >>
+* <<MBQ-link "Snippet/transclude-dynamic-embedding" >>
+* <<MBQ-link "Snippet/mermaid" >>
+* <<MBQ-link "Snippet/transclude-variable" >>
+
+</div>

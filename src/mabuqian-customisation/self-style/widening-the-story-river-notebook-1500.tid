@@ -1,20 +1,17 @@
-created: 20230319023228237
-creator: 马不前
-modified: 20230727113939580
-modifier: 马不前
 tags: $:/tags/Stylesheet
-title: $:/plugins/mabuqian/gumo-customisation/widening-the-story-river-notebook
-caption: 加宽故事河-适配notebook主题
+title: $:/plugins/mabuqian/gumo-customisation/widening-the-story-river-notebook-1500
+caption: 加宽故事河-适配notebook主题1500px
 type: text/vnd.tiddlywiki
 
 <!--加宽故事河，但在移动端设备不会生效--->
+<!--另一个版本，是为了大屏显示器上使用的--->
 <!--notebook主题自带了一个移动端配套插件，但会与jd的移动插件冲突，所以我只保留了notebook移动配套插件，如果换了其他主题需要加回来-->
-<$reveal state="$:/config/gumo-customisation/widening-the-story-river-notebook" type="match" text="show">
+<$reveal state="$:/config/gumo-customisation/widening-the-story-river-notebook-1500" type="match" text="show">
 @media only screen and (min-width: 767px){
 html .tc-story-river {
     padding: 6px 0 !important;
     width: 100% !important;
-    max-width: 1200px !important;
+    max-width: 1500px !important;
     margin: 0 auto !important;
     margin-top: 34px !important;
 }

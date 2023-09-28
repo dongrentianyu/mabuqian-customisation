@@ -1,0 +1,23 @@
+title: $:/plugins/mabuqian/gumo-customisation/ControlPanel/Settings/marco
+tags: $:/tags/MBQ/settings
+caption: Macro
+
+\import [[$:/plugins/mabuqian/gumo-customisation/ControlPanel/Settings/define]]
+
+!! Macro
+
+<div style="column-count:2;">
+
+* <<MBQ-checkbox "hover-effect-macro"  >>
+* <<MBQ-link "message-ai-user" >>
+* <<MBQ-link "message" >>
+* <<MBQ-link "web-search-content" >>
+* <<MBQ-link  "tabs-enhanced" >>
+* <<MBQ-link "list-searchx" >>
+* <<MBQ-link "list-select-edit">>
+* <<MBQ-link "det">>
+* <<MBQ-link "select-display" >>
+* <<MBQ-link "select-field-search" >>
+* <<MBQ-link "Components/donut-chart-macro" >>
+
+</div>

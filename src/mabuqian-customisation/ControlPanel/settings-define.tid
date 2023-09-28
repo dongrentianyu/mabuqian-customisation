@@ -1,0 +1,20 @@
+title: $:/plugins/mabuqian/gumo-customisation/ControlPanel/Settings/define
+tags: $:/tags/Macro
+
+\whitespace trim
+\define MBQ-checkbox(name)
+<$checkbox tiddler="$:/config/gumo-customisation/$name$" field="text" checked="show" unchecked="hide" >
+<$link to="$:/config/gumo-customisation/$name$" >
+config
+</$link>&nbsp;⇨&nbsp;
+<$link to="$:/plugins/mabuqian/gumo-customisation/$name$" >
+{{$:/plugins/mabuqian/gumo-customisation/$name$!!caption}}
+</$link>
+</$checkbox>
+\end
+
+\define MBQ-link(name)
+<$link to="$:/plugins/mabuqian/gumo-customisation/$name$" >
+{{$:/plugins/mabuqian/gumo-customisation/$name$!!caption}}
+</$link>
+\end

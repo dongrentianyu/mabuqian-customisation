@@ -1,0 +1,23 @@
+title: $:/plugins/mabuqian/gumo-customisation/ControlPanel/Settings/function
+tags: $:/tags/MBQ/settings
+caption: Function
+
+\import [[$:/plugins/mabuqian/gumo-customisation/ControlPanel/Settings/define]]
+
+!! Function
+
+<div style="column-count:2;">
+
+* <<MBQ-link "latest-news" >>
+* <<MBQ-link "tag-cloud-display" >>
+* <<MBQ-checkbox "node-pill-top" >>
+* <<MBQ-checkbox "bilingual-fonts" >>
+* <<MBQ-link "demo-convertable" >>
+* <<MBQ-link "homepage-footer" >>
+* <<MBQ-checkbox "tiddler-breadcrumbs-template" >>
+* <<MBQ-link "display-modified-shadow-tiddlers" >>
+* <<MBQ-link "Components/clock" >>
+* <<MBQ-link "mermaid" >>
+* <<MBQ-link "edit-copy" >>
+
+</div>
