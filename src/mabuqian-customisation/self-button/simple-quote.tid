@@ -1,6 +1,6 @@
 caption: simple-quote
 condition: [<targetTiddler>!has[type]] [<targetTiddler>type[text/vnd.tiddlywiki]]
-description: 单引号
+description: 多重引号
 list-before: $:/plugins/mabuqian/gumo-customisation/save-editor
 icon: $:/core/images/right-arrow
 tags: $:/tags/EditorToolbar
@@ -11,6 +11,8 @@ shortcuts: ((simple-quote))
 <$action-sendmessage
 	$message="tm-edit-text-operation"
 	$param="wrap-selection"
-	prefix=">"
-	suffix=""
+	prefix=">>>
+	"
+	suffix="
+	>>>"
 />
