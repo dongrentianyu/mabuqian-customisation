@@ -11,8 +11,8 @@ shortcuts: ((simple-quote))
 <$action-sendmessage
 	$message="tm-edit-text-operation"
 	$param="wrap-selection"
-	prefix=">>>
-	"
+	prefix="<<<
+"
 	suffix="
-	>>>"
+<<<"
 />
