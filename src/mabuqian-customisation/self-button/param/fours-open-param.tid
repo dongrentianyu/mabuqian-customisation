@@ -1,9 +1,5 @@
-created: 20230702170858247
-creator: 马不前
-modified: 20230714165630866
-modifier: 马不前
-tags: 
 title: $:/plugins/mabuqian/gumo-customisation/fours/open-param
+subtitle: 打开条目
 
 \whitespace trim
 \define lingo-base() $:/language/CloseAll/

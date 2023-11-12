@@ -1,5 +1,4 @@
 caption: {{$:/plugins/mabuqian/gumo-customisation/fours/open-icons-paw}} 显示打开条目
-creator: 马不前
 list-after: $:/core/ui/Buttons/close
 description: 显示打开条目
 tags: $:/tags/ViewToolbar

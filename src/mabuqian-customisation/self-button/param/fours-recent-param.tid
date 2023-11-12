@@ -1,9 +1,5 @@
-created: 20230702170000667
-creator: 马不前
-modified: 20230714165630867
-modifier: 马不前
-tags: 
 title: $:/plugins/mabuqian/gumo-customisation/fours/recent-param
+subtitle: 最近修改条目
 
 <div style="column-count:3;fnot-size:50px;">
 <$macrocall $name="timeline" format={{$:/language/RecentChanges/DateFormat}} limit="50"/>
