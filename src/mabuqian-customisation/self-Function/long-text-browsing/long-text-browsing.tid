@@ -1,0 +1,11 @@
+code-body: yes
+tags: 
+title: $:/plugins/mabuqian/gumo-customisation/long-text-browsing
+caption: 优化长文浏览
+type: text/vnd.tiddlywiki
+
+<div style="width: 100%; top: 0px; max-height: 500px; margin-top: -5px;  border: 0px; overflow-x:hidden; overflow-y:auto; ">
+
+<$transclude $tiddler=<<currentTiddler>> mode="block"/>
+
+</div>

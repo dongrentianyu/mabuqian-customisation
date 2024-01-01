@@ -1,16 +1,14 @@
 caption: 节点丸置顶
 list-after: $:/core/ui/ViewTemplate/title
 code-body: yes
-created: 20230604125348466
-creator: 马不前
-modified: 20230716180458725
-modifier: 马不前
 tags: $:/tags/ViewTemplate
 title: $:/plugins/mabuqian/gumo-customisation/node-pill-top
 type: text/vnd.tiddlywiki
 
+<$list filter="[all[current]!is[system]!is[shadow]!node-pill[no]]">
 <$reveal state="$:/config/gumo-customisation/node-pill-top" type="match" text="show">
 <div style="font-size: 0.8em;">
 <$transclude tiddler={{$:/plugins/mabuqian/gumo-customisation/node-explorer-colorful}} field=title mode=inline/>
 </div>
 </$reveal>
+</$list>
