@@ -6,11 +6,11 @@ type: text/vnd.tiddlywiki
 
 \whitespace trim
 <$button
-    popup=<<qualify "$:/state/popup/fishingdeck">>
-    tooltip="复制标签"
-    aria-label="复制标签"
-    class=<<tv-config-toolbar-class>>
-    selectedClass="tc-selected">
+  popup=<<qualify "$:/state/popup/fishingdeck">>
+  tooltip="复制标签"
+  aria-label="复制标签"
+  class=<<tv-config-toolbar-class>>
+  selectedClass="tc-selected">
 		<$action-sendmessage $message="tm-new-tiddler"  tags={{!!tags}}  />
 	  <$list filter="[<tv-config-toolbar-icons>match[yes]]">
     {{$:/plugins/mabuqian/gumo-customisation/donut-small}}

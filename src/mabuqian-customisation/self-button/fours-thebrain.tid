@@ -12,7 +12,7 @@ param="$:/plugins/mabuqian/gumo-customisation/fours/thebrain-param"
 tooltip="显示脑图"
 aria-label="显示脑图"
 class=<<tv-config-toolbar-class>>
-    >
+>
 <$list filter="[<tv-config-toolbar-icons>match[yes]]">
 {{$:/plugins/mabuqian/gumo-customisation/fours/thebrain-icons}}</$list>
 <$list filter="[<tv-config-toolbar-text>match[yes]]"><span class="tc-btn-text">显示脑图</span></$list>
