@@ -1,5 +1,11 @@
 created: 20230730144035991
-modified: 20230730144037606
+modified: 20240708113831395
 tags: 
 title: TableOfContents
 type: text/vnd.tiddlywiki
+
+<div class="tc-table-of-contents">
+
+<<toc-selective-expandable 'TableOfContents'>>
+
+</div>

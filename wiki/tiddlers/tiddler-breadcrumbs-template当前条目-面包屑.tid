@@ -1,3 +1,11 @@
+created: 20240708143155135
+modified: 20240708143224241
+tags: 代码存放
+title: tiddler-breadcrumbs-template当前条目-面包屑
+type: text/vnd.tiddlywiki
+
+
+```
 apex_tag: TableOfContents
 length_limit: 15
 list-after: $:/core/ui/ViewTemplate/title
@@ -93,3 +101,4 @@ use_apex_tag: true
 </div>
 </$list>
 </$reveal>
+```

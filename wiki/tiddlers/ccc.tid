@@ -1,0 +1,30 @@
+apex_tag: Index
+created: 20240708121910191
+length_limit: 15
+list-after: $:/core/ui/ViewTemplate/title
+modified: 20240708125734312
+tags: 
+title: ccc
+type: text/vnd.tiddlywiki
+use_apex_tag: true
+
+<$list filter="[<currentTiddler>!prefix[$:/]in-tagtree-of:inclusive[Index]]">
+<div style='width:100%'>
+<$reveal type='nomatch' state='$:/state/Global/ShowBreadcrumbs' text=true>
+	<$button class='tc-btn-invisible' set='$:/state/Global/ShowBreadcrumbs' setTo='true'>
+		{{$:/core/images/right-arrow}} Index
+	</$button>
+</$reveal>
+
+<$reveal type='match' state='$:/state/Global/ShowBreadcrumbs' text=true>
+	<$button class='tc-btn-invisible' set='$:/state/Global/ShowBreadcrumbs' setTo='false'>
+		{{$:/core/images/down-arrow}} Index
+	</$button><br>
+	<$set name=CurrentTag value={{!!title}}>
+		<$set name=TheFilter filter='[is[current]]'>
+			<$transclude $variable="breadcrumbs" zzz="ccc" />
+		</$set>
+	</$set>
+</$reveal>
+</div>
+</$list>

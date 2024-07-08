@@ -1,0 +1,77 @@
+created: 20240708143330074
+modified: 20240708143350595
+tags: 代码存放
+title: test-breadcrumbs
+type: text/vnd.tiddlywiki
+
+
+```
+title: $:/plugins/mabuqian/gumo-customisation/test-breadcrumbs
+caption: 当前条目
+tags: 
+type: text/vnd.tiddlywiki
+
+\define yetAgain(namx)
+<$reveal type='match' state={{{$namx$!!use_apex_tag}}} text='true'>
+	<$reveal type='match' state={{$namx$}} text={{$namx$!!apex_tag}}>
+		<$link to=<<currentTiddler>>>
+			<$view field='title'/>
+		</$link>
+		> 
+		<$list filter=<<Extra>> emptyMessage=''>
+			... > 
+		</$list>
+		<$list filter="""$(End)$""">
+			<$link to=<<currentTiddler>>>
+				<$view field='title'/>
+			</$link>
+			> 
+		</$list>
+		<br>
+	</$reveal>
+</$reveal>
+<$reveal type='nomatch' state={{$namx$!!use_apex_tag}} text='true'>
+	<$link to=<<currentTiddler>>>
+		<$view field='title'/>
+	</$link>
+	> 
+	<$list filter=<<Extra>> emptyMessage=''>
+			.. > 
+	</$list>
+	<$list filter="""$(End)$""">
+		<$link to=<<currentTiddler>>>
+			<$view field='title'/>
+		</$link>
+		> 
+	</$list>
+	<br>
+</$reveal>
+\end
+
+\define again(ttt)
+<$list filter=<<First>>>
+    <$transclude $variable="yetAgain" namx="$ttt$" />
+</$list>
+\end
+
+\define finalFilter(yyy)
+<$set name=First filter="""$(TheFilter)$ +[last[]]""">
+	<$set name=End filter="""$(TheFilter)$ +[butlast[]]  +[butfirst[]] +[first{$namx$!!length_limit}] +[reverse[]]""">
+		<$set name=Extra filter="""$(TheFilter)$ +[butlast[]] +[butfirst[]] +[butfirst{$namx$!!length_limit}] +[limit[1]]""" emptyValue='[is[system]!is[system]]'>
+			<$transclude $variable="again" ttt="$yyy$" />
+		</$set>
+	</$set>
+</$set>
+\end
+
+\define breadcrumbsEmptyMessage(ggg)
+<$set name=TheFilter filter="""$(TheFilter)$ [<CurrentTag>]"""><$transclude $variable="breadcrumbs" zzz="$ggg$" /></$set>
+\end
+
+\define breadcrumbs(zzz)
+<$list filter='[<CurrentTag>tags[]] -[[$:/tags/SideBar]]' variable=CurrentTag emptyMessage=""" <$transclude $variable="finalFilter" yyy="$zzz$" /> """>
+	<$list filter="""$(TheFilter)$ +[field:title<CurrentTag>]""" emptyMessage=<<breadcrumbsEmptyMessage>>>
+	</$list>
+</$list>
+\end
+```
