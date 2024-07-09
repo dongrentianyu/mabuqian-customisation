@@ -1,8 +1,8 @@
 created: 20240708131846813
 list-after: $:/core/ui/ViewTemplate/title
-modified: 20240708144046751
+modified: 20240709121911475
 tags: $:/tags/ViewTemplate
 title: yui
 type: text/vnd.tiddlywiki
 
-<$transclude $variable="cell-rock" root="Index" namx="Index" true-gate="true" long="15"/>
+<$transclude $variable="cell-rock" root="Index" namx="Index" true-gate="true" long="15" text="Index"/>
