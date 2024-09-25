@@ -4,6 +4,6 @@
   "author": "mabuqian",
   "description": "个人化定制插件",
   "plugin-type": "plugin",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "list": "readme ControlPanel/Settings"
 }
