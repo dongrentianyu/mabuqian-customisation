@@ -4,6 +4,6 @@
   "author": "mabuqian",
   "description": "Some palettes",
   "plugin-type": "plugin",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "list": "readme ChangeLog"
 }
