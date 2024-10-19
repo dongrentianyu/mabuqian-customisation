@@ -1,0 +1,9 @@
+{
+  "title": "$:/plugins/mabuqian/GuMo-Palettes",
+  "name": "GuMo-Palettes",
+  "author": "mabuqian",
+  "description": "Some palettes",
+  "plugin-type": "plugin",
+  "version": "0.0.1",
+  "list": "readme ChangeLog"
+}

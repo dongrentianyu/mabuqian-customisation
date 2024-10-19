@@ -1,3 +1,11 @@
+created: 20241019144940532
+modified: 20241019145004353
+tags: 代码存放
+title: gumo-customisation/ControlPanel/Settings/palette
+type: text/vnd.tiddlywiki
+
+
+```
 title: $:/plugins/mabuqian/gumo-customisation/ControlPanel/Settings/palette
 tags: $:/tags/MBQ/settings
 caption: Palette
@@ -22,3 +30,4 @@ caption: Palette
 * <<MBQ-link  "palette/Chestnut" >>
 
 </div>
+```

@@ -1,0 +1,23 @@
+title: $:/plugins/mabuqian/GuMo-Palettes/readme
+type: text/vnd.tiddlywiki
+
+\define GuMo-Palettes-link(name)
+<$link to="$:/plugins/mabuqian/GuMo-Palettes/$name$" >
+{{$:/plugins/mabuqian/GuMo-Palettes/$name$!!caption}}
+</$link>
+\end
+
+
+!! Palette
+
+好的配色，可以极大增强wiki的颜值，借助ai设计了一些配色，可复制代码使用。以浅色调为主，有点单调，因为太复杂的配色ai写不出来，写得非常混乱
+
+* [[Dracula]]，一个暗色的调色，来源在url字段里
+* <<GuMo-Palettes-link  "blueish-white">>
+* <<GuMo-Palettes-link  "brownish-yellow">>
+* <<GuMo-Palettes-link  "elegant-purple">>
+* <<GuMo-Palettes-link  "pinkish-rosy">>
+* <<GuMo-Palettes-link  "aqua-blue" >>
+* <<GuMo-Palettes-link  "pastel-green" >>
+* <<GuMo-Palettes-link  "plain-silver" >>
+* <<GuMo-Palettes-link  "Chestnut" >>
