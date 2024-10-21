@@ -1,0 +1,21 @@
+created: 20241021164211557
+modified: 20241021164705892
+tags: 宏代码介绍
+title: det
+type: text/vnd.tiddlywiki
+
+
+```
+\define det(name text)
+<details>
+<summary  style="cursor: pointer">$name$</summary>
+<p style="margin-left: 1em">$text$</p>
+</details>
+\end
+```
+
+这是一个非常简单的宏。
+
+<<det "test" "这是一个测试条目">>
+
+功能就是定义两个变量，一个变量是details的名称，另一个变量则是隐藏或展示的文本。适用于一句话。

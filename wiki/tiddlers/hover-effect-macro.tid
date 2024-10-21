@@ -1,0 +1,9 @@
+created: 20241021164730576
+modified: 20241021165056228
+tags: 宏代码介绍
+title: hover-effect-macro
+type: text/vnd.tiddlywiki
+
+this is a <<fc "test" >>.
+
+使用`fc`宏，里面只有一个变量，只需要填写相应的名称即可。这样只有鼠标移动上去才会显示文本。目前不支持更改样式。

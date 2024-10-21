@@ -1,20 +1,15 @@
-created: 20230721145148081
-modified: 20241021164726999
-tags: 
-title: Index
+created: 20241021165204510
+modified: 20241021165432000
+tags: 宏代码介绍
+title: message
 type: text/vnd.tiddlywiki
 
-Some readme here.
+因为有时候问AI问题，经常想保存下来。就搞了这么几个样式。
 
-编辑栏中新增了一个按钮，可以直接点击保存当前条目内容，保存修改后的内容。
-
-
-
-
-
----
+`message`，提供两个变量，一个`user`，一个`message`，前者是发消息的人或AI，后者是消息的内容。
 
 <<message "AI" "hi,the world" >>
+
 
 <<message-ai "Hello! How can I assist you today? " >>
 
@@ -61,14 +56,3 @@ handleClick函数的关键点是:
 所以handleClick作为一个点击回调,其关键是调用setCount来更新count状态,从而实现点击计数的效果。它充分利用了React函数组件内部定义函数和闭包的机制。
 
 " >>
-
-<span class="myTOC">
-<$macrocall
-	$name="navx"
-	tag="TableOfContents"
-  selectedTiddler="$:/temp/toc/selectedTiddler"
-	unselectedText="<p>选择目录中的一个主题，点击箭头可展开主题。</p>"
-	missingText="<p>佚失条目。</p>"/>
-</span>
-
-<$transclude tiddler="$:/plugins/mabuqian/gumo-customisation/homepage-footer" mode="block"/>
