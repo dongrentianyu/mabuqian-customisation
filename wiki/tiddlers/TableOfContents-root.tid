@@ -1,8 +1,8 @@
 created: 20240708144122638
 list-after: $:/core/ui/ViewTemplate/title
-modified: 20240708144426315
+modified: 20241021162235964
 tags: $:/tags/ViewTemplate
-title: yui 1
+title: TableOfContents-root
 type: text/vnd.tiddlywiki
 
 <$transclude $variable="cell-rock" root="TableOfContents" namx="TableOfContents" true-gate="true" long="15" text="当前条目路径"/>
