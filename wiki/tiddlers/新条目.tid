@@ -1,0 +1,17 @@
+created: 20241029222708384
+modified: 20241029223944157
+tags: Index
+title: 新条目
+type: text/vnd.tiddlywiki
+
+<$let a={{$:/temp/focussedTiddler}} b={{{ [{$:/HistoryList!!current-tiddler}first[]] }}} >
+<$list filter="[<b>!prefix[$:/]in-tagtree-of:inclusive[Index]]">
+	<div style='width:100%'>
+		<$set name=CurrentTag value={{!!title}} >
+			<$set name=TheFilter filter='[is[current]]' >
+				<$transclude $variable="breadcrumbs" apex_tag-4="Index" tid-4=<<currentTiddler>>  use_apex_tag-4="Index" length_limit-2="15"/><$link to=<<CurrentTag>>><$view tiddler=<<CurrentTag>> field="title"/></$link>
+			</$set>
+		</$set>
+	</div>
+</$list>
+</$let>
