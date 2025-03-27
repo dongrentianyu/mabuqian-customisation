@@ -1,9 +1,8 @@
-tags: 
 title: $:/plugins/mabuqian/gumo-customisation/web-search-content
 caption: 通过搜索嵌入网页内容
 type: text/vnd.tiddlywiki
 
-\define websc(web,word)
+\define web-word(web,word)
 \rules except wikilink
 <$wikify name="input" text="$web$/#$word$">
 <$list filter="[<__word__>trim[]!is[blank]]" variable=null>
@@ -15,8 +14,8 @@ type: text/vnd.tiddlywiki
 
 \end
 
-Search in [[WENAI|https://dongrentianyu.github.io/WENAI/]]: 
-<$edit-text  tiddler="$:/temp/search-WENAI" field="keywords" placeholder="search WENAI"/>
+Search in [[Rhizome|https://dongrentianyu.github.io/rhizome]]: 
+<$edit-text  tiddler="$:/temp/search-Rhizome" field="keywords" placeholder="search Rhizome"/>
 
-<$macrocall $name="websc" web="https://dongrentianyu.github.io/WENAI" word={{$:/temp/search-WENAI!!keywords}} />
+<$macrocall $name="web-word" web="https://dongrentianyu.github.io/rhizome" word={{$:/temp/search-Rhizome!!keywords}} />
 
