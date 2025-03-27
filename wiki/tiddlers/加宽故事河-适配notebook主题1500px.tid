@@ -1,3 +1,11 @@
+created: 20250327205845965
+modified: 20250327205856252
+tags: 存档文件
+title: 加宽故事河-适配notebook主题1500px
+type: text/vnd.tiddlywiki
+
+
+```
 tags: $:/tags/Stylesheet
 title: $:/plugins/mabuqian/gumo-customisation/widening-the-story-river-notebook-1500
 caption: 加宽故事河-适配notebook主题1500px
@@ -17,3 +25,4 @@ html .tc-story-river {
 }
 }
 </$reveal>
+```

@@ -1,8 +1,20 @@
-tags: $:/tags/Stylesheet
-caption: notebook主题搜索框固定
-title: $:/plugins/mabuqian/gumo-customisation/search-box-fixed-notebook
+created: 20250327205906188
+modified: 20250327205924765
+tags: 存档文件
+title: search-box-fixed-notebook-ach
 type: text/vnd.tiddlywiki
-code-body: yes
+
+`因为开发了xnote主题插件，并不再需要notebook主题插件的配置了`
+
+
+```shell
+search-box-fixed-notebook
+
+created: 20230731171128005
+modified: 20230731171150293
+tags: $:/tags/Stylesheet
+title: search-box-fixed-notebook
+type: text/vnd.tiddlywiki
 
 <$reveal state="$:/config/gumo-customisation/search-box-fixed-notebook" type="match" text="show">
 /* Hide subtitle */
@@ -115,3 +127,4 @@ gap: 1ch;
 margin:0;
 }
 </$reveal>
+```

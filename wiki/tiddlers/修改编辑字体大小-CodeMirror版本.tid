@@ -1,3 +1,13 @@
+created: 20250327210557722
+modified: 20250327210624271
+tags: 存档文件
+title: 修改编辑字体大小-CodeMirror版本
+type: text/vnd.tiddlywiki
+
+`同样不再使用了，因为现在都用codemirror6插件了`
+
+
+```
 code-body: yes
 caption: 修改编辑字体大小-CodeMirror版本
 tags: $:/tags/Stylesheet
@@ -12,3 +22,4 @@ type: text/vnd.tiddlywiki
     line-height: 30px;
 }
 </$reveal>
+```

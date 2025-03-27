@@ -5,14 +5,3 @@ tags: $:/tags/ControlPanel/SettingsTab
 通过勾选来选择或取消相应条目
 
 <<tabs "[all[shadows+tiddlers]tag[$:/tags/MBQ/settings]]" "$:/plugins/mabuqian/gumo-customisation/ControlPanel/Settings/buttons" "$:/state/tab/MBQ/settings" "tc-vertical">>
-
-因为太微特殊的影子条目机制，所以只能通过手动创建按钮来使用notebook主题固定搜索框功能。
-
-<$button>
-<$action-createtiddler $basetitle="search-box-fixed-notebook" tags="$:/tags/Stylesheet" text={{$:/plugins/mabuqian/gumo-customisation/search-box-fixed-notebook}}>
-<$action-navigate $to=<<createTiddler-title>>/>
-</$action-createtiddler>
-创建notebook主题固定搜索框条目
-</$button>
-
-[[search-box-fixed-notebook]]
