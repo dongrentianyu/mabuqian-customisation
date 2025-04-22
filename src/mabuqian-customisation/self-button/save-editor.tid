@@ -16,7 +16,6 @@ type: text/vnd.tiddlywiki
 \whitespace trim
 \define save-tiddler-button()
 \whitespace trim
-<$fieldmangler>
 	<$button
 		tooltip={{$:/language/Buttons/Save/Hint}}
 		aria-label={{$:/language/Buttons/Save/Caption}}
@@ -30,7 +29,6 @@ type: text/vnd.tiddlywiki
 			<span class="tc-btn-text"><$text text={{$:/language/Buttons/Save/Caption}}/></span>
 		</$list>
 	</$button>
-</$fieldmangler>
 \end
 <$tiddler tiddler=<<targetTiddler>> >
 <<save-tiddler-button>>
