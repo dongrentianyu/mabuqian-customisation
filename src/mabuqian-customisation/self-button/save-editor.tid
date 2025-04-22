@@ -20,7 +20,7 @@ type: text/vnd.tiddlywiki
 	<$button
 		tooltip={{$:/language/Buttons/Save/Hint}}
 		aria-label={{$:/language/Buttons/Save/Caption}}
-		class=<<tv-config-toolbar-class>>
+		class="tc-editor-toolbactc-btn-invisible"
 	>
 		<<save-tiddler-actions>>
 		<$list filter="[<tv-config-toolbar-icons>match[yes]]">
