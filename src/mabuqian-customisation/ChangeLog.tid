@@ -6,3 +6,7 @@ type: text/vnd.tiddlywiki
 Split the colour scheme files into a separate plugin `$:/plugins/mabuqian/GuMo-Palettes`. Again, this can be installed via CPL.
 
 把配色表文件拆分到单独的插件`$:/plugins/mabuqian/GuMo-Palettes`中。同样可以通过CPL安装。
+
+!! ChangeLog 0.5.1
+
+删除大量过时的设计

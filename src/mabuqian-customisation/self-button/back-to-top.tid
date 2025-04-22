@@ -9,14 +9,14 @@ caption: 回到顶端按钮
 <$list filter="[<currentTiddler>field:type[text/vnd.tiddlywiki]!prefix[$:/]!field:GM-back-to-top[yes]] :or[<currentTiddler>!prefix[$:/]field:type[]!field:GM-back-to-top[yes]]">
 <$button popup=<<qualify "$:/state/popup/back-to-top">> tooltip="回到顶端" aria-label="回到顶端" class=<<tv-config-toolbar-class>> selectedClass="tc-selected" style="display: block;width: 100%;margin: 1em auto;">
 <$action-navigate $to=<<currentTiddler>>/>
-<$list filter="[<tv-config-toolbar-icons>match[yes]]">
-{{$:/core/images/up-arrow}}
-</$list>
-<$list filter="[<tv-config-toolbar-text>match[yes]]">
-<span class="tc-btn-text">
-回到顶端
-</span>
-</$list>
+	<%if [<tv-config-toolbar-icons>match[yes]] %>
+		{{$:/core/images/up-arrow}}
+	<%endif%>
+	<%if [<tv-config-toolbar-text>match[yes]] %>
+		<span class="tc-btn-text">
+		回到顶端
+	</span>
+	<%endif%>
 </$button>
 </$list>
 </$reveal>

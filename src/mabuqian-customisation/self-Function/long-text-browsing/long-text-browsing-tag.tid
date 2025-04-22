@@ -1,7 +1,0 @@
-code-body: yes
-list-before: $:/config/ViewTemplateBodyFilters/default
-tags: $:/tags/ViewTemplateBodyFilter
-title: $:/plugins/mabuqian/gumo-customisation/long-text-browsing/tagsFilters
-type: text/vnd.tiddlywiki
-
-[[$:/config/gumo-customisation/long-text-browsing]get[text]match[show]] :then[all[current]!is[system]!is[shadow]then[$:/plugins/mabuqian/gumo-customisation/long-text-browsing]else[$:/core/ui/ViewTemplate/body/default]] :else[all[current]!is[system]!is[shadow]long-text-browsing[short]then[$:/plugins/mabuqian/gumo-customisation/long-text-browsing]else[$:/core/ui/ViewTemplate/body/default]]

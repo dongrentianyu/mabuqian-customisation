@@ -8,10 +8,7 @@ caption: Buttons
 
 <div style="column-count:2;">
 
-* <<MBQ-link "fours/open" >>
-* <<MBQ-link "fours/recent" >>
-* <<MBQ-link "fours/search" >>
-* <<MBQ-link "fours/thebrain" >>
+* <<MBQ-link "copy-title-button" >>
 * <<MBQ-link "copy-tags-button" >>
 * <<MBQ-link "add-prefix" >>
 * <<MBQ-checkbox "back-to-top" >>

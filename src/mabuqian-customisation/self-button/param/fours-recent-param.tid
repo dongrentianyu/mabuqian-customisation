@@ -1,6 +1,0 @@
-title: $:/plugins/mabuqian/gumo-customisation/fours/recent-param
-subtitle: 最近修改条目
-
-<div style="column-count:3;fnot-size:50px;">
-<$macrocall $name="timeline" format={{$:/language/RecentChanges/DateFormat}} limit="50"/>
-</div>
